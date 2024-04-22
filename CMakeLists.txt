@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(NOMDEVOTREPROJET LANGUAGES CXX)
+project(TowerDefense LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23) # si nécessaire
 
 set(CMAKE_AUTOMOC ON)
@@ -11,6 +11,6 @@ file (GLOB_RECURSE sourceCode src/*.cpp src/*.h)
 
 qt_standard_project_setup()
 
-add_executable(NOMDEVOTREPROJET ${sourceCode})
+add_executable(TowerDefense ${sourceCode} main.cpp MyScene.cpp MainWindow.cpp)
 
-target_link_libraries(NOMDEVOTREPROJET PRIVATE Qt6::Widgets)
+target_link_libraries(TowerDefense PRIVATE Qt6::Widgets)

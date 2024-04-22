@@ -451,3 +451,75 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NJ21Jz
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71f9c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71f9c.dir/build.make CMakeFiles/cmTC_71f9c.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NJ21Jz'
+Building CXX object CMakeFiles/cmTC_71f9c.dir/src.cxx.o
+/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -std=gnu++23 -o CMakeFiles/cmTC_71f9c.dir/src.cxx.o -c /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NJ21Jz/src.cxx
+Linking CXX executable cmTC_71f9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71f9c.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_71f9c.dir/src.cxx.o -o cmTC_71f9c 
+gmake[1]: Leaving directory '/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NJ21Jz'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r1dk8N
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7555/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7555.dir/build.make CMakeFiles/cmTC_a7555.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r1dk8N'
+Building CXX object CMakeFiles/cmTC_a7555.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_STDATOMIC  -fdiagnostics-color=always -std=gnu++23 -o CMakeFiles/cmTC_a7555.dir/src.cxx.o -c /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r1dk8N/src.cxx
+Linking CXX executable cmTC_a7555
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7555.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_a7555.dir/src.cxx.o -o cmTC_a7555 
+gmake[1]: Leaving directory '/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r1dk8N'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+

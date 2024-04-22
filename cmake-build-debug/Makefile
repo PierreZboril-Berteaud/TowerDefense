@@ -129,6 +129,91 @@ TowerDefense/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/build
 .PHONY : TowerDefense/fast
 
+#=============================================================================
+# Target rules for targets named TowerDefense_autogen
+
+# Build rule for target.
+TowerDefense_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TowerDefense_autogen
+.PHONY : TowerDefense_autogen
+
+# fast build rule for target.
+TowerDefense_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense_autogen.dir/build.make CMakeFiles/TowerDefense_autogen.dir/build
+.PHONY : TowerDefense_autogen/fast
+
+MainWindow.o: MainWindow.cpp.o
+.PHONY : MainWindow.o
+
+# target to build an object file
+MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MainWindow.cpp.o
+.PHONY : MainWindow.cpp.o
+
+MainWindow.i: MainWindow.cpp.i
+.PHONY : MainWindow.i
+
+# target to preprocess a source file
+MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MainWindow.cpp.i
+.PHONY : MainWindow.cpp.i
+
+MainWindow.s: MainWindow.cpp.s
+.PHONY : MainWindow.s
+
+# target to generate assembly for a file
+MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MainWindow.cpp.s
+.PHONY : MainWindow.cpp.s
+
+MyScene.o: MyScene.cpp.o
+.PHONY : MyScene.o
+
+# target to build an object file
+MyScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MyScene.cpp.o
+.PHONY : MyScene.cpp.o
+
+MyScene.i: MyScene.cpp.i
+.PHONY : MyScene.i
+
+# target to preprocess a source file
+MyScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MyScene.cpp.i
+.PHONY : MyScene.cpp.i
+
+MyScene.s: MyScene.cpp.s
+.PHONY : MyScene.s
+
+# target to generate assembly for a file
+MyScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/MyScene.cpp.s
+.PHONY : MyScene.cpp.s
+
+TowerDefense_autogen/mocs_compilation.o: TowerDefense_autogen/mocs_compilation.cpp.o
+.PHONY : TowerDefense_autogen/mocs_compilation.o
+
+# target to build an object file
+TowerDefense_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o
+.PHONY : TowerDefense_autogen/mocs_compilation.cpp.o
+
+TowerDefense_autogen/mocs_compilation.i: TowerDefense_autogen/mocs_compilation.cpp.i
+.PHONY : TowerDefense_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TowerDefense_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.i
+.PHONY : TowerDefense_autogen/mocs_compilation.cpp.i
+
+TowerDefense_autogen/mocs_compilation.s: TowerDefense_autogen/mocs_compilation.cpp.s
+.PHONY : TowerDefense_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TowerDefense_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.s
+.PHONY : TowerDefense_autogen/mocs_compilation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -161,7 +246,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... TowerDefense_autogen"
 	@echo "... TowerDefense"
+	@echo "... MainWindow.o"
+	@echo "... MainWindow.i"
+	@echo "... MainWindow.s"
+	@echo "... MyScene.o"
+	@echo "... MyScene.i"
+	@echo "... MyScene.s"
+	@echo "... TowerDefense_autogen/mocs_compilation.o"
+	@echo "... TowerDefense_autogen/mocs_compilation.i"
+	@echo "... TowerDefense_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
