@@ -16,12 +16,15 @@ void MyScene::keyPressEvent(QKeyEvent * event){
     }
     else if (event->key() == Qt::Key_Right){
         setPos(x()+10,y());
+        qDebug() <<"Right Key pressed";
     }
     else if (event->key() == Qt::Key_Up){
         setPos(x(),y()-10);
+        qDebug() <<"Up Key pressed";
     }
     else if (event->key() == Qt::Key_Down){
         setPos(x(),y()+10);
+        qDebug() <<"Down Key pressed";
     }
 }
 /*
