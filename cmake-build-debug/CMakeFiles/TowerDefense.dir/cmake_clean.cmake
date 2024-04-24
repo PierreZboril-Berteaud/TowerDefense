@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TowerDefense.dir/MyScene.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/TowerDefense.dir/enemy.cpp.o"
+  "CMakeFiles/TowerDefense.dir/enemy.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/main.cpp.o"
   "CMakeFiles/TowerDefense.dir/main.cpp.o.d"
   "TowerDefense"
