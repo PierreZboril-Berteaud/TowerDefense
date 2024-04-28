@@ -28,7 +28,7 @@ namespace {
 struct qt_meta_stringdata_Enemy_t {
     uint offsetsAndSizes[6];
     char stringdata0[6];
-    char stringdata1[6];
+    char stringdata1[5];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
@@ -36,11 +36,11 @@ struct qt_meta_stringdata_Enemy_t {
 Q_CONSTINIT static const qt_meta_stringdata_Enemy_t qt_meta_stringdata_Enemy = {
     {
         QT_MOC_LITERAL(0, 5),  // "Enemy"
-        QT_MOC_LITERAL(6, 5),  // "moove"
-        QT_MOC_LITERAL(12, 0)   // ""
+        QT_MOC_LITERAL(6, 4),  // "move"
+        QT_MOC_LITERAL(11, 0)   // ""
     },
     "Enemy",
-    "moove",
+    "move",
     ""
 };
 #undef QT_MOC_LITERAL
@@ -77,7 +77,7 @@ Q_CONSTINIT const QMetaObject Enemy::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_Enemy_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Enemy, std::true_type>,
-        // method 'moove'
+        // method 'move'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -89,7 +89,7 @@ void Enemy::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         auto *_t = static_cast<Enemy *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->moove(); break;
+        case 0: _t->move(); break;
         default: ;
         }
     }

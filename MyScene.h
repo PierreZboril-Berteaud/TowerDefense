@@ -7,6 +7,11 @@
 #include <QGraphicsView>
 #include <QPixmap>
 #include <QTimer>
+#include <QKeyEvent>
+#include <QObject>
+#include <QGraphicsRectItem>
+
+
 
 #include "enemy.h"
 class MyScene : public QGraphicsScene, public QGraphicsRectItem {

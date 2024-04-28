@@ -1,5 +1,5 @@
 #include "MainWindow.h"
-
+#include <QPixmap>
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
 

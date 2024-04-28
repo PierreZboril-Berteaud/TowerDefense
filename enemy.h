@@ -3,17 +3,31 @@
 
 #include <QGraphicsRectItem>
 #include <QObject>
+#include <QTimer>
+#include <QList>
+#include <QGraphicsScene>
+#include <iostream>
 
 class Enemy: public QObject,public QGraphicsRectItem{
     Q_OBJECT
-private:
-    int PV;
-    bool dead;
-public:
-    Enemy();
-    ~Enemy();
-public slots:
-    void moove();
+    private:
+        int PV;
+        bool dead;
+        int damage;
+        QTimer* timer;
+    public:
+        Enemy();
+        ~Enemy();
+
+    bool is_dead();
+    int get_pv();
+    int get_damage();
+
+    void set_damage(int damage);
+    void set_pv(int PV);
+
+        public slots:
+    void move();
 
 
 };

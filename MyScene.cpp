@@ -1,7 +1,6 @@
 #include "MyScene.h"
-#include <QKeyEvent>
-#include <QDebug>
-MyScene::MyScene(QObject* parent) : QGraphicsScene(parent) {
+
+MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     QGraphicsRectItem* qgri = new QGraphicsRectItem(10, 100, 300, 200); //Crée un rectangle au milieu
     this->addItem(qgri);
 
@@ -11,7 +10,7 @@ MyScene::MyScene(QObject* parent) : QGraphicsScene(parent) {
 }
 void MyScene::keyPressEvent(QKeyEvent * event){
     if(event->key() == Qt::Key_Left){
-        setPos(x()-10,y());
+        setPos(x()-100,y());
         qDebug() <<"Left Key pressed";
     }
     else if (event->key() == Qt::Key_Right){
