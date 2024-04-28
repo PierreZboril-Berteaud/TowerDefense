@@ -26,9 +26,9 @@ class Enemy: public QObject,public QGraphicsRectItem{
     void set_damage(int damage);
     void set_pv(int PV);
 
-        public slots:
-    void move();
 
+    public slots:
+        void move();
 
 };
 

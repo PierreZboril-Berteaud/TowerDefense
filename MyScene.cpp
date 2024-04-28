@@ -1,6 +1,7 @@
 #include "MyScene.h"
 #include "menu.h"
 
+
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
@@ -26,12 +27,13 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     }
 }*/
 
-MyScene::~MyScene() {
-}
+MyScene::~MyScene() {}
+
+
 void MyScene::spawnEnemy() {
     if (nbEnemy > 0) { // Vérifie s'il reste encore des ennemis à faire apparaître
         Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
-        enemy->setPos(1000,1000);
+        enemy->setPos(0,rand() % 600);
         addItem(enemy); // Ajoute l'ennemi à la scène
         nbEnemy--; // Décrémente le nombre d'ennemis restants
     } else {
