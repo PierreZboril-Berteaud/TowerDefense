@@ -3,7 +3,7 @@
 #include "enemy.h"
 
 Tower::Tower(QGraphicsItem *parent) : QObject(), QGraphicsRectItem(parent) {
-    setRect(0, 0, 50, 50); // Définit les dimensions du rectangle de la tour
+    setRect(0, 0, 100, 100); // Définit les dimensions du rectangle de la tour
     QGraphicsTextItem *textItem = new QGraphicsTextItem("Tower", this);
     textItem->setPos(5, 5);
 

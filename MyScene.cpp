@@ -1,10 +1,11 @@
 #include "MyScene.h"
-
+#include "menu.h"
 
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(500);
+    timer->start(5000);
+
 }
 void MyScene::keyPressEvent(QKeyEvent * event){
     if(event->key() == Qt::Key_Left){
@@ -24,14 +25,7 @@ void MyScene::keyPressEvent(QKeyEvent * event){
         qDebug() <<"Down Key pressed";
     }
 }
-/*
-void MyScene::drawBackground(QPainter* painter, const QRectF &rect)
-{
-    Q_UNUSED(rect);
-    QPixmap pixBackground("../images/TestMap.png");
-    painter->drawPixmap(QPointF(0,0), pixBackground, sceneRect());
-    // pixBackgroud est un attribut de type QPixmap qui contient l’image de fond
-}*/
+
 MyScene::~MyScene() {
 }
 void MyScene::spawnEnemy() {
@@ -42,4 +36,9 @@ void MyScene::spawnEnemy() {
     } else {
         timer->stop(); // Arrête le timer lorsque tous les ennemis ont été ajoutés
     }
+}
+void MyScene::spawnTower(){
+    Tower *tower = new Tower();
+    tower->setPos(5, 5);
+    addItem(tower);
 }

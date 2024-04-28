@@ -30,6 +30,7 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
         int nbEnemy = 5;
     private slots:
             void spawnEnemy();
+            void spawnTower();
 
 
 };

@@ -17,7 +17,6 @@ Enemy::~Enemy() {
 
 void Enemy::move() {
     setPos(x() + 10, y()); // Déplace l'ennemi d'un pixel vers la droite à chaque intervalle de temps
-
 }
 bool Enemy::is_dead(){
     if(get_pv() == 0){
