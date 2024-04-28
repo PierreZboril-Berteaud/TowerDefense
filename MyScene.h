@@ -11,6 +11,8 @@
 #include <QObject>
 #include <QGraphicsRectItem>
 
+#include "tower.h"
+
 
 
 #include "enemy.h"

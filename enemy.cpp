@@ -3,6 +3,8 @@
 
 Enemy::Enemy(){
     setRect(0, 0, 50, 50); // Définir les dimensions du rectangle Enemy
+    QGraphicsTextItem *textItem = new QGraphicsTextItem("Enemy", this);
+    textItem->setPos(5, 5);
 
     // Créer un timer pour gérer le mouvement de l'Enemy
     QTimer *timer = new QTimer(this);

@@ -1,5 +1,6 @@
 #include "MyScene.h"
 
+
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));

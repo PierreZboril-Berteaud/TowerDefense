@@ -203,6 +203,12 @@
 			null
 		],
 		[
+			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.h",
+			"MU",
+			"EWIEGA46WW/moc_menu.cpp",
+			null
+		],
+		[
 			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h",
 			"MU",
 			"EWIEGA46WW/moc_tower.cpp",
@@ -283,6 +289,11 @@
 		],
 		[
 			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.cpp",
 			"MU",
 			null
 		],

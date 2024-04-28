@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_MainWindow.cpp"
 #include "EWIEGA46WW/moc_MyScene.cpp"
 #include "EWIEGA46WW/moc_enemy.cpp"
+#include "EWIEGA46WW/moc_tower.cpp"
