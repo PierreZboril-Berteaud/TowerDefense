@@ -21,7 +21,7 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
 
     public:
         MyScene(QObject* parent = nullptr);
-        void keyPressEvent(QKeyEvent * event);
+        //void keyPressEvent(QKeyEvent * event);
         //void drawBackground(QPainter* painter, const QRectF &rect);
         virtual ~MyScene();
 
@@ -30,7 +30,7 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
         int nbEnemy = 5;
     private slots:
             void spawnEnemy();
-            void spawnTower();
+            //void spawnTower();
 
 
 };
