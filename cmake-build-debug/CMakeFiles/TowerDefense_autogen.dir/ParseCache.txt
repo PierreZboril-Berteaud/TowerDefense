@@ -45,6 +45,7 @@
  mdp:/usr/include/c++/12/bits/hash_bytes.h
  mdp:/usr/include/c++/12/bits/invoke.h
  mdp:/usr/include/c++/12/bits/ios_base.h
+ mdp:/usr/include/c++/12/bits/istream.tcc
  mdp:/usr/include/c++/12/bits/iterator_concepts.h
  mdp:/usr/include/c++/12/bits/list.tcc
  mdp:/usr/include/c++/12/bits/locale_classes.h
@@ -140,6 +141,8 @@
  mdp:/usr/include/c++/12/initializer_list
  mdp:/usr/include/c++/12/ios
  mdp:/usr/include/c++/12/iosfwd
+ mdp:/usr/include/c++/12/iostream
+ mdp:/usr/include/c++/12/istream
  mdp:/usr/include/c++/12/iterator
  mdp:/usr/include/c++/12/limits
  mdp:/usr/include/c++/12/list
@@ -488,6 +491,7 @@
  mdp:/usr/include/c++/12/bits/hash_bytes.h
  mdp:/usr/include/c++/12/bits/invoke.h
  mdp:/usr/include/c++/12/bits/ios_base.h
+ mdp:/usr/include/c++/12/bits/istream.tcc
  mdp:/usr/include/c++/12/bits/iterator_concepts.h
  mdp:/usr/include/c++/12/bits/list.tcc
  mdp:/usr/include/c++/12/bits/locale_classes.h
@@ -583,6 +587,8 @@
  mdp:/usr/include/c++/12/initializer_list
  mdp:/usr/include/c++/12/ios
  mdp:/usr/include/c++/12/iosfwd
+ mdp:/usr/include/c++/12/iostream
+ mdp:/usr/include/c++/12/istream
  mdp:/usr/include/c++/12/iterator
  mdp:/usr/include/c++/12/limits
  mdp:/usr/include/c++/12/list
@@ -896,6 +902,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h
+/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/Camera.h
  mmc:Q_OBJECT
  mdp:/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/Camera.h
@@ -1353,6 +1360,7 @@
  mdp:/usr/include/c++/12/bits/hash_bytes.h
  mdp:/usr/include/c++/12/bits/invoke.h
  mdp:/usr/include/c++/12/bits/ios_base.h
+ mdp:/usr/include/c++/12/bits/istream.tcc
  mdp:/usr/include/c++/12/bits/iterator_concepts.h
  mdp:/usr/include/c++/12/bits/list.tcc
  mdp:/usr/include/c++/12/bits/locale_classes.h
@@ -1448,6 +1456,8 @@
  mdp:/usr/include/c++/12/initializer_list
  mdp:/usr/include/c++/12/ios
  mdp:/usr/include/c++/12/iosfwd
+ mdp:/usr/include/c++/12/iostream
+ mdp:/usr/include/c++/12/istream
  mdp:/usr/include/c++/12/iterator
  mdp:/usr/include/c++/12/limits
  mdp:/usr/include/c++/12/list
@@ -1715,3 +1725,4 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.cpp
+/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp

@@ -7,6 +7,9 @@
 
 
 class tower {
+    private:
+
+
 
 };
 

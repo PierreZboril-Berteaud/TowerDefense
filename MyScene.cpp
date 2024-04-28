@@ -1,12 +1,9 @@
 #include "MyScene.h"
 
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
-    QGraphicsRectItem* qgri = new QGraphicsRectItem(10, 100, 300, 200); //Crée un rectangle au milieu
-    this->addItem(qgri);
-
     timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(update()));
-    timer->start(30); // Toutes les 30 millisecondes
+    connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
+    timer->start(500);
 }
 void MyScene::keyPressEvent(QKeyEvent * event){
     if(event->key() == Qt::Key_Left){
@@ -35,5 +32,13 @@ void MyScene::drawBackground(QPainter* painter, const QRectF &rect)
     // pixBackgroud est un attribut de type QPixmap qui contient l’image de fond
 }*/
 MyScene::~MyScene() {
-
+}
+void MyScene::spawnEnemy() {
+    if (nbEnemy > 0) { // Vérifie s'il reste encore des ennemis à faire apparaître
+        Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
+        addItem(enemy); // Ajoute l'ennemi à la scène
+        nbEnemy--; // Décrémente le nombre d'ennemis restants
+    } else {
+        timer->stop(); // Arrête le timer lorsque tous les ennemis ont été ajoutés
+    }
 }

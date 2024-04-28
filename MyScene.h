@@ -17,14 +17,18 @@
 class MyScene : public QGraphicsScene, public QGraphicsRectItem {
     Q_OBJECT
 
-public:
-    MyScene(QObject* parent = nullptr);
-    void keyPressEvent(QKeyEvent * event);
-    //void drawBackground(QPainter* painter, const QRectF &rect);
-    virtual ~MyScene();
+    public:
+        MyScene(QObject* parent = nullptr);
+        void keyPressEvent(QKeyEvent * event);
+        //void drawBackground(QPainter* painter, const QRectF &rect);
+        virtual ~MyScene();
 
-private:
-    QTimer* timer;
+    private:
+        QTimer* timer;
+        int nbEnemy = 5;
+    private slots:
+            void spawnEnemy();
+
 
 };
 

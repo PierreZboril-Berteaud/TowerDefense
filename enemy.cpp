@@ -13,14 +13,10 @@ Enemy::~Enemy() {
     delete timer;
 }
 
-void Enemy::move(){
-    setPos(x()+2,y()); //Bouge l'enemy sur le coté vers la droite
-    if(pos().x() + rect().height()>800){
-        scene()->removeItem(this);
-        delete this;
-    }
-}
+void Enemy::move() {
+    setPos(x() + 10, y()); // Déplace l'ennemi d'un pixel vers la droite à chaque intervalle de temps
 
+}
 bool Enemy::is_dead(){
     if(get_pv() == 0){
         return true;
