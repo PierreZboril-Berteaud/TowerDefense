@@ -201,6 +201,12 @@
 			"MU",
 			"EWIEGA46WW/moc_enemy.cpp",
 			null
+		],
+		[
+			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h",
+			"MU",
+			"EWIEGA46WW/moc_tower.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -277,6 +283,11 @@
 		],
 		[
 			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp",
 			"MU",
 			null
 		]

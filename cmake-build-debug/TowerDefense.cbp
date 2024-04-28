@@ -134,6 +134,12 @@
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp">
 			<Option target="TowerDefense"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h">
+			<Option target="TowerDefense"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

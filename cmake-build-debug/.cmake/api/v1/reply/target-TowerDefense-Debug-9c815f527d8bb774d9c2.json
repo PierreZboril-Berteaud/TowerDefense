@@ -254,7 +254,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				6
 			]
 		}
 	],
@@ -323,14 +324,16 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				6
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				5
+				5,
+				7
 			]
 		}
 	],
@@ -370,6 +373,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "enemy.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "tower.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "tower.h",
 			"sourceGroupIndex" : 1
 		}
 	],

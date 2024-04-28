@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TowerDefense.dir/enemy.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/main.cpp.o"
   "CMakeFiles/TowerDefense.dir/main.cpp.o.d"
+  "CMakeFiles/TowerDefense.dir/tower.cpp.o"
+  "CMakeFiles/TowerDefense.dir/tower.cpp.o.d"
   "TowerDefense"
   "TowerDefense.pdb"
 )

@@ -262,6 +262,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tower.o: tower.cpp.o
+.PHONY : tower.o
+
+# target to build an object file
+tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/tower.cpp.o
+.PHONY : tower.cpp.o
+
+tower.i: tower.cpp.i
+.PHONY : tower.i
+
+# target to preprocess a source file
+tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/tower.cpp.i
+.PHONY : tower.cpp.i
+
+tower.s: tower.cpp.s
+.PHONY : tower.s
+
+# target to generate assembly for a file
+tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/tower.cpp.s
+.PHONY : tower.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,6 +311,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tower.o"
+	@echo "... tower.i"
+	@echo "... tower.s"
 .PHONY : help
 
 
