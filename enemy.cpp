@@ -2,6 +2,7 @@
 #include "enemy.h"
 
 Enemy::Enemy(){
+    //QGraphicsRectItem *enemy = new QGraphicsRectItem();
     setRect(0, 0, 50, 50); // Définir les dimensions du rectangle Enemy
     QGraphicsTextItem *textItem = new QGraphicsTextItem("Enemy", this);
     textItem->setPos(5, 5);
@@ -17,10 +18,6 @@ Enemy::~Enemy() {
 
 void Enemy::move() {
     setPos(x() + 10, y()); // Déplace l'ennemi d'un pixel vers la droite à chaque intervalle de temps
-    qreal rightEdge = x() + boundingRect().width();
-    if( rightEdge >= 800){
-        scene()->removeItem(this);
-    }
 }
 
 bool Enemy::is_dead(){
