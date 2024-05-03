@@ -34,7 +34,9 @@ int Enemy::get_pv(){
 int Enemy::get_damage(){
     return damage;
 }
-
+void Enemy::set_dead(bool dead){
+    this->dead = dead;
+}
 void Enemy::set_damage(int damage){
     if(damage>0){
         this->damage = damage;
@@ -50,4 +52,8 @@ void Enemy::set_pv(int PV){
     else{
         std::cout<<"Les PV doivent êtres supérieurs à 0";
     }
+}
+
+void Enemy::inflict_damage(int damage){
+    set_pv(PV-damage);
 }

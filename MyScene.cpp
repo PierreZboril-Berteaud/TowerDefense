@@ -5,7 +5,7 @@
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(500);
+    timer->start(1000);
 
 }
 void MyScene::keyPressEvent(QKeyEvent * event){
@@ -42,3 +42,4 @@ void MyScene::spawnEnemy() {
     }
 
 }
+

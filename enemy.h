@@ -18,13 +18,18 @@ class Enemy: public QObject,public QGraphicsRectItem{
     public:
         Enemy();
         ~Enemy();
+        //Getters
+        bool is_dead();
+        int get_pv();
+        int get_damage();
 
-    bool is_dead();
-    int get_pv();
-    int get_damage();
+        //setters
+        void set_dead(bool dead);
+        void set_damage(int damage);
+        void set_pv(int PV);
 
-    void set_damage(int damage);
-    void set_pv(int PV);
+        //
+        void inflict_damage(int damage);
 
 
     public slots:
