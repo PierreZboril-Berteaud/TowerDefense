@@ -2,18 +2,17 @@
 #include "enemy.h"
 
 Enemy::Enemy(){
-    //QGraphicsRectItem *enemy = new QGraphicsRectItem();
     setRect(0, 0, 50, 50); // Définir les dimensions du rectangle Enemy
+    setPos(0,0);
     QGraphicsTextItem *textItem = new QGraphicsTextItem("Enemy", this);
     textItem->setPos(5, 5);
 
     // Créer un timer pour gérer le mouvement de l'Enemy
-    QTimer *timer = new QTimer(this);
-    connect(timer,&QTimer::timeout,this,&Enemy::move);// Mouvement toutes les 30 millisecondes
-    timer->start(30);
+    connect(move_timer, SIGNAL(timeout()),this,SLOT(move()));// Mouvement toutes les 30 millisecondes
+    move_timer->start(150);
 }
 Enemy::~Enemy() {
-    delete timer;
+    delete move_timer;
 }
 
 void Enemy::move() {
@@ -56,4 +55,10 @@ void Enemy::set_pv(int PV){
 
 void Enemy::inflict_damage(int damage){
     set_pv(PV-damage);
+}
+void Enemy::remove_enemy(){
+    if(x()>150){
+        move_timer->stop();
+
+    }
 }

@@ -14,7 +14,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
         int PV;
         bool dead;
         int damage;
-        QTimer* timer;
+        QTimer* move_timer =  new QTimer(this);
     public:
         Enemy();
         ~Enemy();
@@ -30,9 +30,10 @@ class Enemy: public QObject,public QGraphicsRectItem{
 
         //
         void inflict_damage(int damage);
+        void remove_enemy();
 
 
-    public slots:
+    private slots:
         void move();
 
 };
