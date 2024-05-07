@@ -2,10 +2,9 @@
 #include "enemy.h"
 
 Enemy::Enemy(){
-    setRect(0, 0, 50, 50); // Définir les dimensions du rectangle Enemy
-    setPos(0,0);
-    QGraphicsTextItem *textItem = new QGraphicsTextItem("Enemy", this);
-    textItem->setPos(5, 5);
+    setRect(-800, 0, 50, 50); // Définir les dimensions du rectangle Enemy
+    /*QGraphicsTextItem *textItem = new QGraphicsTextItem("Enemy", this);
+    textItem->setPos(5, 5);*/
 
     // Créer un timer pour gérer le mouvement de l'Enemy
     connect(move_timer, SIGNAL(timeout()),this,SLOT(move()));// Mouvement toutes les 30 millisecondes
@@ -17,6 +16,12 @@ Enemy::~Enemy() {
 
 void Enemy::move() {
     setPos(x() + 10, y()); // Déplace l'ennemi d'un pixel vers la droite à chaque intervalle de temps
+    if(x()==200){
+        setPos(x(),y()+15);
+    }
+    if(x() >800){
+        remove_enemy();
+    }
 }
 
 bool Enemy::is_dead(){
@@ -57,8 +62,7 @@ void Enemy::inflict_damage(int damage){
     set_pv(PV-damage);
 }
 void Enemy::remove_enemy(){
-    if(x()>500){
         move_timer->stop();
         scene()->removeItem(this);
-    }
+        delete this;
 }

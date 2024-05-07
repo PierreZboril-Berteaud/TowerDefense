@@ -5,10 +5,10 @@
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(2000);
+    timer->start(3000);
 
 }
-void MyScene::keyPressEvent(QKeyEvent * event){
+/*void MyScene::keyPressEvent(QKeyEvent * event){
     if(event->key() == Qt::Key_Left){
         setPos(x()-100,y());
         qDebug() <<"Left Key pressed";
@@ -25,7 +25,7 @@ void MyScene::keyPressEvent(QKeyEvent * event){
         setPos(x(),y()+10);
         qDebug() <<"Down Key pressed";
     }
-}
+}*/
 
 MyScene::~MyScene() {}
 

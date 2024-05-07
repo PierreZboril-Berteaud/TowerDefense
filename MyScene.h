@@ -21,7 +21,7 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
 
     public:
         MyScene(QObject* parent = nullptr);
-        void keyPressEvent(QKeyEvent * event);
+        //void keyPressEvent(QKeyEvent * event);
         void deleteEnemy();
         //void drawBackground(QPainter* painter, const QRectF &rect);
         virtual ~MyScene();
