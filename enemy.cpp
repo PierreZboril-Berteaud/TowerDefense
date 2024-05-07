@@ -57,8 +57,8 @@ void Enemy::inflict_damage(int damage){
     set_pv(PV-damage);
 }
 void Enemy::remove_enemy(){
-    if(x()>150){
+    if(x()>500){
         move_timer->stop();
-
+        scene()->removeItem(this);
     }
 }
