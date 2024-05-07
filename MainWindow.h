@@ -2,10 +2,11 @@
 #define CPP_QT_TPMINIPROJET_MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QGraphicsView>
 #include <QMenu>
-#include <QMenuBar>
 #include <QAction>
+#include <QDialog>
+#include <QPushButton>
+#include <QVBoxLayout>
 #include <QMessageBox>
 
 #include "MyScene.h"
@@ -16,7 +17,10 @@ class MainWindow : public QMainWindow {
 private :
     MyScene* mainScene;
     QGraphicsView* mainView;
-    QMenu* helpMenu;
+    QPushButton* playButton;
+    QPushButton* leaderboardButton;
+    QPushButton* exitButton;
+
 
 
 public:
@@ -24,7 +28,9 @@ public:
     virtual ~MainWindow();
 
 public slots:
-    void slot_aboutMenu();
+    void slot_playGame();
+    void slot_showLeaderboard();
+    void slot_exitGame();
 };
 
 

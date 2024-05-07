@@ -1,32 +1,52 @@
 #include "MainWindow.h"
 #include <QPixmap>
+#include <QVBoxLayout>
+#include <QMenuBar>
+#include <QApplication>
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
 
+
+
+    QVBoxLayout *layout = new QVBoxLayout;
+    QWidget *centralWidget = new QWidget(this);
+    setCentralWidget(centralWidget);
+    centralWidget->setLayout(layout);
+
+    playButton = new QPushButton("Play");
+    connect(playButton, &QPushButton::clicked, this, &MainWindow::slot_playGame);
+    layout->addWidget(playButton);
+
+    leaderboardButton = new QPushButton("Leaderboard");
+    connect(leaderboardButton, &QPushButton::clicked, this, &MainWindow::slot_showLeaderboard);
+    layout->addWidget(leaderboardButton);
+
+    exitButton = new QPushButton("Exit");
+    connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit);
+    layout->addWidget(exitButton);
+
+    mainView = new QGraphicsView;
+    setFixedSize(1280, 800);
+
+
+}
+
+MainWindow::~MainWindow(){}
+
+
+void MainWindow::slot_playGame() {
+    qDebug() << "ça marche";
     this->mainScene = new MyScene;
 
     this->mainView = new QGraphicsView;
     this->mainView->setScene(mainScene);
 
     this->setCentralWidget(mainView);
-    this->setWindowTitle("My main window");
-    this->resize(1280, 800);
-
-
-    helpMenu = menuBar()->addMenu(tr("&Help"));
-    QAction* actionHelp = new QAction(tr("&About"), this);
-    connect(actionHelp, SIGNAL(triggered()), this, SLOT(slot_aboutMenu()));
-    helpMenu->addAction(actionHelp);
-
 }
 
-MainWindow::~MainWindow(){
-
+void MainWindow::slot_showLeaderboard() {
+    qDebug() << "ça marche";
 }
-
-void MainWindow::slot_aboutMenu(){
-    QMessageBox msgBox;
-    msgBox.setText("A small QT/C++ projet...");
-    msgBox.setModal(true); // on souhaite que la fenetre soit modale i.e qu'on ne puisse plus cliquer ailleurs
-    msgBox.exec();
+void MainWindow::slot_exitGame() {
+    qDebug() << "ça marche";
 }
