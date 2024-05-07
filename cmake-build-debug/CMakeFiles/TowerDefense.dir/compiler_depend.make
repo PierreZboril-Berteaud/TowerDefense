@@ -453,6 +453,26 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
@@ -466,8 +486,6 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
@@ -503,9 +521,6 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
@@ -513,8 +528,14 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/TowerDefense.dir/MyScene.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp \
   /usr/include/stdc-predef.h \
@@ -1451,6 +1472,26 @@ CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDe
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
@@ -1464,8 +1505,6 @@ CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDe
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
@@ -2409,6 +2448,25 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
@@ -2422,8 +2480,6 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
@@ -2903,7 +2959,11 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.cpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
+
+/usr/include/c++/12/fstream:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
 
@@ -2912,8 +2972,6 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
 
@@ -2959,7 +3017,23 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h:
+
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h:
 
@@ -3055,6 +3129,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_enemy.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h:
 
+/usr/include/c++/12/bits/fstream.tcc:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
@@ -3126,6 +3202,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
 /usr/include/c++/12/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/12/bits/streambuf.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h:
 
 /usr/include/c++/12/bits/locale_classes.tcc:
 
@@ -3401,6 +3479,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
 
 /usr/include/pthread.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu:
@@ -3448,6 +3528,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_tower.cpp:
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/12/typeinfo:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h:
 
@@ -3525,6 +3607,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/c++/12/bits/allocator.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 TowerDefense_autogen/mocs_compilation.cpp:
@@ -3549,9 +3633,13 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp:
 
+/usr/include/c++/12/bits/codecvt.h:
+
 /usr/include/c++/12/bits/cpp_type_traits.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
 
 /usr/include/c++/12/new:
 
@@ -3571,6 +3659,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12/compare:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h:
+
 /usr/include/c++/12/tuple:
 
 /usr/include/c++/12/bits/functional_hash.h:
@@ -3589,9 +3679,13 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
+/usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -3765,8 +3859,6 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/12/system_error:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/12/iosfwd:
@@ -3822,6 +3914,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/c++/12/cstring:
 
 /usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h:
 
 /usr/include/c++/12/bits/cxxabi_forced.h:
 
@@ -3893,6 +3987,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h:
+
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/12/limits:
@@ -3902,6 +3998,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/c++/12/tr1/special_function_util.h:
 
 /usr/include/c++/12/tr1/ell_integral.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget:
 
 /usr/include/c++/12/cwctype:
 

@@ -8,6 +8,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QMessageBox>
+#include <QTableWidget>
+#include <QTableWidgetItem>
 
 #include "MyScene.h"
 
@@ -20,6 +22,7 @@ private :
     QPushButton* playButton;
     QPushButton* leaderboardButton;
     QPushButton* exitButton;
+    QTableWidget *leaderboardTable;
 
 
 
