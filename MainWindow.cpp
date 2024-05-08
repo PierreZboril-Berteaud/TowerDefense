@@ -7,56 +7,69 @@
 #include <QGraphicsView>
 #include <QTableWidget>
 #include <QTextStream>
+#include <QDir>
 #include <fstream>
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
-{
 
-
-
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     QVBoxLayout *layout = new QVBoxLayout;
     QWidget *centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
     centralWidget->setLayout(layout);
 
     playButton = new QPushButton("Play");
-    connect(playButton, &QPushButton::clicked, this, &MainWindow::slot_playGame); //Lance le jeux
+    connect(playButton, &QPushButton::clicked, this, &MainWindow::slot_playGame);
     layout->addWidget(playButton);
 
     leaderboardButton = new QPushButton("Leaderboard");
-    connect(leaderboardButton, &QPushButton::clicked, this, &MainWindow::slot_showLeaderboard); //appelle la fonction pour afficher le leaderboard
+    connect(leaderboardButton, &QPushButton::clicked, this, &MainWindow::slot_showLeaderboard);
     layout->addWidget(leaderboardButton);
 
     exitButton = new QPushButton("Exit");
-    connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit); //Boutton qui permet de fermer directement la fenêtre
+    connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit);
     layout->addWidget(exitButton);
 
-    mainView = new QGraphicsView;
     setFixedSize(1280, 800);
-
-
 }
 
-MainWindow::~MainWindow(){}
-
+MainWindow::~MainWindow() {}
 
 void MainWindow::slot_playGame() {
+    // Création de la scène du jeu
     this->mainScene = new MyScene;
 
+    // Création de la vue principale
     this->mainView = new QGraphicsView;
     this->mainView->setScene(mainScene);
-
     this->setCentralWidget(mainView);
-    this->setFixedSize(1280,800);
+    QString path = QDir::currentPath();
+    QDir::setCurrent(QCoreApplication::applicationDirPath());
+    QString Path_image = path+"/images/1280.jpg";
+    QPixmap backgroundImage(Path_image);
+    if (!backgroundImage.isNull()) {
+        QString styleSheet = "background-image: url(" + Path_image + ");";
+        styleSheet += " background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;";
+
+        this->centralWidget()->setStyleSheet(styleSheet);
+
+    }
+    //si on click sur agrandir la fenetre ça module la taille de l'image
+    if(this->centralWidget()->size() != backgroundImage.size()){
+        this->centralWidget()->resize(backgroundImage.size());
+    }
+
+
+
+    this->setFixedSize(1280, 800);
 }
 
 void MainWindow::slot_showLeaderboard() {
-    //Cette fonction crée un tableau avec QTableWidget et qui affiche les informations (pseudo/score depuis un fichier txt)
+    // Cette fonction crée un tableau avec QTableWidget et qui affiche les informations (pseudo/score depuis un fichier txt)
     leaderboardTable = new QTableWidget;
     leaderboardTable->setColumnCount(2); // Deux colonnes : pseudo et score
 
     std::ifstream file("../Leaderboard.txt");
     if (!file.is_open()) {
-        QMessageBox::warning(this, "Error", "Could not open the leaderboard file."); //Affiche une erreur si le fichier est introuvable ou si il n'est pas ouvert
+        QMessageBox::warning(this, "Error", "Could not open the leaderboard file."); // Affiche une erreur si le fichier est introuvable ou si il n'est pas ouvert
         return;
     }
 
@@ -81,4 +94,5 @@ void MainWindow::slot_showLeaderboard() {
     leaderboardTable->setWindowTitle("Leaderboard");
     leaderboardTable->show();
 }
+
 void MainWindow::slot_exitGame() {}

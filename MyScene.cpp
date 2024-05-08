@@ -5,7 +5,7 @@
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(3000);
+    timer->start(1000);
 
 }
 /*void MyScene::keyPressEvent(QKeyEvent * event){
@@ -35,7 +35,7 @@ void MyScene::spawnEnemy() {
         Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
         enemy->setPos(0,0);
         addItem(enemy); // Ajoute l'ennemi à la scène
-        nbEnemy--; // Décrémente le nombre d'ennemis restants
+        nbEnemy++; // Décrémente le nombre d'ennemis restants
 
     } else {
         timer->stop(); // Arrête le timer lorsque tous les ennemis ont été ajoutés

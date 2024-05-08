@@ -16,6 +16,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
         int damage;
         QTimer* move_timer =  new QTimer(this);
     public:
+        QGraphicsPixmapItem *enemyPixmapItem;
         Enemy();
         ~Enemy();
         //Getters
