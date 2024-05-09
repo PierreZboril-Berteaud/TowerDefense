@@ -33,9 +33,8 @@ MyScene::~MyScene() {}
 void MyScene::spawnEnemy() {
     if (nbEnemy > 0) { // Vérifie s'il reste encore des ennemis à faire apparaître
         Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
-        enemy->setPos(0,0);
         addItem(enemy); // Ajoute l'ennemi à la scène
-        nbEnemy++; // Décrémente le nombre d'ennemis restants
+        nbEnemy--; // Décrémente le nombre d'ennemis restants
 
     } else {
         timer->stop(); // Arrête le timer lorsque tous les ennemis ont été ajoutés
