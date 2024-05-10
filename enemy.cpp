@@ -23,9 +23,12 @@ int Enemy::get_spawnY(){
     return spawnY;
 }
 void Enemy::move() {
-    setPos(x() + 10, y());
-    if (x() > 1280) {
-        remove_enemy();
+    qreal newX = x() + 1;
+    qreal newY = y();
+    if (scene() && scene()->sceneRect().contains(newX, newY)) {
+        enemyPixmapItem->setPos(newX, newY);
+    } else {
+        //remove_enemy();
     }
 }
 

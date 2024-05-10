@@ -11,10 +11,8 @@
 #include <QObject>
 #include <QGraphicsRectItem>
 
+
 #include "tower.h"
-
-
-
 #include "enemy.h"
 class MyScene : public QGraphicsScene, public QGraphicsRectItem {
     Q_OBJECT
@@ -29,9 +27,12 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
     private:
         QTimer* timer;
         int nbEnemy = 5;
+        QList<Tower*> m_towers;
     private slots:
             void spawnEnemy();
-            //void spawnTower();
+            //void spawnTower()
+    protected:
+        void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
 
 
 };

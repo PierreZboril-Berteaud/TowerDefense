@@ -1,7 +1,7 @@
 #include "MyScene.h"
 #include "menu.h"
-
-
+#include "tower.h"
+#include <QGraphicsSceneMouseEvent>
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
@@ -42,3 +42,12 @@ void MyScene::spawnEnemy() {
 
 }
 
+void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
+    if (event->button() == Qt::RightButton) {
+        // Spawn a new tower at the click position
+        Tower *tower = new Tower(this);
+        tower->setPos(event->scenePos());
+        m_towers.append(tower);
+        addItem(tower);
+    }
+}

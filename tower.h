@@ -8,8 +8,9 @@
 #include <QGraphicsRectItem>
 #include <QObject>
 #include <QTimer>
+#include <QGraphicsItem>
 
-class Tower : public QObject, public QGraphicsRectItem {
+class Tower :public QObject,public QGraphicsItem {
     Q_OBJECT
     public:
         Tower(QGraphicsItem *parent = nullptr);
@@ -17,6 +18,13 @@ class Tower : public QObject, public QGraphicsRectItem {
     private:
         QTimer *timer;
         int tower_damage;
+        int cost;
+        int range;
+    protected:
+        // Implement the tower's graphics and collision detection
+        QRectF boundingRect() const override;
+        void paint(QPainter *painter, const QStyleOptionGraphicsItem* option, QWidget *widget) override;
+
 
 
 
