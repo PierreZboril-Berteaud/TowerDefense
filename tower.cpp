@@ -1,12 +1,17 @@
 #include "tower.h"
-#include <QGraphicsScene>
-#include <QPainter>
 
 
-Tower::Tower(QGraphicsItem *parent): QGraphicsItem(parent){
+
+Tower::Tower(){
     cost = 10;
     range = 10;
     tower_damage = 10;
+
+    QString path = QDir::currentPath();
+    QDir::setCurrent(QCoreApplication::applicationDirPath());
+    QPixmap towerPixmap(path + "/images/redTower.png");
+    TowerPixmapItem = new QGraphicsPixmapItem(towerPixmap,this);
+
 
 
 }
@@ -15,12 +20,3 @@ Tower::~Tower() {
     delete timer;
 }
 
-QRectF Tower::boundingRect() const {
-    // Define the tower's bounding rectangle
-    return QRectF(-20, -20, 40, 40);
-}
-
-void Tower::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
-    // Draw the tower's graphics
-    painter->drawRect(boundingRect());
-}

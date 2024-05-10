@@ -9,21 +9,23 @@
 #include <QObject>
 #include <QTimer>
 #include <QGraphicsItem>
+#include <QGraphicsScene>
+#include <QPainter>
+#include <QPixmap>
+#include <QDir>
+#include <QCoreApplication>
 
-class Tower :public QObject,public QGraphicsItem {
+class Tower :public QObject,public QGraphicsRectItem {
     Q_OBJECT
     public:
-        Tower(QGraphicsItem *parent = nullptr);
+        QGraphicsPixmapItem *TowerPixmapItem;
+        Tower();
         virtual ~Tower();
     private:
         QTimer *timer;
         int tower_damage;
         int cost;
         int range;
-    protected:
-        // Implement the tower's graphics and collision detection
-        QRectF boundingRect() const override;
-        void paint(QPainter *painter, const QStyleOptionGraphicsItem* option, QWidget *widget) override;
 
 
 

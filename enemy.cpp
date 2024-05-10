@@ -1,7 +1,5 @@
 #include "enemy.h"
-#include <QPixmap>
-#include <QDir>
-#include <QCoreApplication>
+
 Enemy::Enemy() {
     QString path = QDir::currentPath();
     QDir::setCurrent(QCoreApplication::applicationDirPath());

@@ -10,6 +10,7 @@
 #include <QKeyEvent>
 #include <QObject>
 #include <QGraphicsRectItem>
+#include <QGraphicsSceneMouseEvent>
 
 
 #include "tower.h"
@@ -18,6 +19,7 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
     Q_OBJECT
 
     public:
+
         MyScene(QObject* parent = nullptr);
         //void keyPressEvent(QKeyEvent * event);
         void deleteEnemy();

@@ -7,6 +7,9 @@
 #include <QList>
 #include <QGraphicsScene>
 #include <iostream>
+#include <QPixmap>
+#include <QDir>
+#include <QCoreApplication>
 
 class Enemy: public QObject,public QGraphicsRectItem{
     Q_OBJECT
@@ -14,9 +17,11 @@ class Enemy: public QObject,public QGraphicsRectItem{
         int PV;
         bool dead;
         int damage;
-        QTimer* move_timer =  new QTimer(this);
+
         int spawnX = -1280;
         int spawnY =-300;
+
+        QTimer* move_timer =  new QTimer(this);
     public:
         QGraphicsPixmapItem *enemyPixmapItem;
         Enemy();

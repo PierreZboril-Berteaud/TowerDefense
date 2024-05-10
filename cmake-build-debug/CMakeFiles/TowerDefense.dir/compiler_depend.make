@@ -517,21 +517,12 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
-  /usr/include/c++/12/iostream \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
@@ -555,6 +546,21 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/c++/12/iostream \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/c++/12/fstream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
@@ -1036,14 +1042,45 @@ CMakeFiles/TowerDefense.dir/MyScene.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Co
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/c++/12/filesystem \
+  /usr/include/c++/12/bits/fs_fwd.h \
+  /usr/include/c++/12/bits/fs_path.h \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/codecvt \
+  /usr/include/c++/12/bits/fs_dir.h \
+  /usr/include/c++/12/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h
+  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.h
 
 CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDefense_autogen/mocs_compilation.cpp \
   /usr/include/stdc-predef.h \
@@ -1562,8 +1599,40 @@ CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDe
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/c++/12/filesystem \
+  /usr/include/c++/12/bits/fs_fwd.h \
+  /usr/include/c++/12/bits/fs_path.h \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/codecvt \
+  /usr/include/c++/12/bits/fs_dir.h \
+  /usr/include/c++/12/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
@@ -2570,8 +2639,37 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/c++/12/filesystem \
+  /usr/include/c++/12/bits/fs_fwd.h \
+  /usr/include/c++/12/bits/fs_path.h \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/codecvt \
+  /usr/include/c++/12/bits/fs_dir.h \
+  /usr/include/c++/12/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream
@@ -3017,26 +3115,47 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+  /usr/include/c++/12/filesystem \
+  /usr/include/c++/12/bits/fs_fwd.h \
+  /usr/include/c++/12/bits/fs_path.h \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/codecvt \
+  /usr/include/c++/12/bits/fs_dir.h \
+  /usr/include/c++/12/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
-  /usr/include/c++/12/iostream
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h
 
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication:
 
 TowerDefense_autogen/EWIEGA46WW/moc_enemy.cpp:
 
 TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.h:
 
@@ -3047,6 +3166,10 @@ TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
 
 /usr/include/c++/12/fstream:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -3088,6 +3211,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter:
+
 /usr/include/c++/12/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -3099,10 +3224,6 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/12/cstdlib:
 
@@ -3186,9 +3307,9 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/linux/close_range.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
-
 /usr/include/c++/12/codecvt:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -3524,6 +3645,10 @@ TowerDefense_autogen/EWIEGA46WW/moc_menu.cpp:
 
 /usr/include/c++/12/functional:
 
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h:
 
 /usr/include/c++/12/string_view:
@@ -3567,6 +3692,10 @@ TowerDefense_autogen/EWIEGA46WW/moc_menu.cpp:
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/12/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/12/bits/ranges_cmp.h:
 
@@ -3764,8 +3893,6 @@ TowerDefense_autogen/EWIEGA46WW/moc_menu.cpp:
 
 /usr/include/c++/12/bits/stl_tempbuf.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
-
 /usr/include/c++/12/bits/mofunc_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
@@ -3920,6 +4047,10 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/c++/12/bits/list.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream:
+
+/usr/include/c++/12/bits/stl_tree.h:
+
 /usr/include/c++/12/bits/stl_map.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton:
@@ -3955,6 +4086,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
 
@@ -4124,19 +4257,7 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
-
-/usr/include/c++/12/bits/stl_tree.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent:
 
 /usr/include/c++/12/locale:
 
@@ -4147,3 +4268,7 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/include/c++/12/bits/fs_dir.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
