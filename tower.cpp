@@ -12,11 +12,10 @@ Tower::Tower(){
     QPixmap towerPixmap(path + "/images/redTower.png");
     TowerPixmapItem = new QGraphicsPixmapItem(towerPixmap,this);
 
-
-
 }
 
 Tower::~Tower() {
-    delete timer;
+    scene()->removeItem(TowerPixmapItem); // Assurez-vous de retirer l'élément de la scène avant de le supprimer
+    delete TowerPixmapItem;
 }
 

@@ -44,10 +44,11 @@ void MyScene::spawnEnemy() {
 
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
-        // Spawn a new tower at the click position
+        QPointF towerPos = event->scenePos() - QPointF(35, 45); //Centre l'image par rapport au curseur de la souris
+
+        //Fais spawn une tour
         Tower *tower = new Tower();
-        tower->setPos(event->scenePos());
-        m_towers.append(tower);
+        tower->setPos(towerPos);
         addItem(tower);
     }
 }
