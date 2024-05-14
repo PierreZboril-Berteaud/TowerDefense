@@ -23,24 +23,23 @@ class MyScene : public QGraphicsScene, public QGraphicsRectItem {
         MyScene(QObject* parent = nullptr);
         //void keyPressEvent(QKeyEvent * event);
         void deleteEnemy();
-        //void drawBackground(QPainter* painter, const QRectF &rect);
         virtual ~MyScene();
 
     private:
         QTimer* timer;
         int nbEnemy = 5;
-        QList<Tower*> m_towers;
+        QList<Tower*> m_towers;//stock les tours posées
     private slots:
             void spawnEnemy();
-            //void spawnTower()
     protected:
-        void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+        void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
 
 
 };
 
 class MyView: public QGraphicsView{
 protected:
+
     virtual void resizeEvent (QResizeEvent* event)
     {
         this->fitInView(sceneRect());

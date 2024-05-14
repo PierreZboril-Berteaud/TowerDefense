@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit);
     layout->addWidget(exitButton);
 
-    setFixedSize(1280, 800);
+    setFixedSize(1280, 720);
 }
 
 MainWindow::~MainWindow() {}
@@ -59,7 +59,7 @@ void MainWindow::slot_playGame() {
 
 
 
-    this->setFixedSize(1280, 800);
+    setFixedSize(1280, 720);
 }
 
 void MainWindow::slot_showLeaderboard() {

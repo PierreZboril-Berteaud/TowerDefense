@@ -14,6 +14,7 @@
 #include <QPixmap>
 #include <QDir>
 #include <QCoreApplication>
+#include <QDebug>
 
 class Tower :public QObject,public QGraphicsRectItem {
     Q_OBJECT
@@ -21,14 +22,14 @@ class Tower :public QObject,public QGraphicsRectItem {
         QGraphicsPixmapItem *TowerPixmapItem;
         Tower();
         virtual ~Tower();
+    public slots:
+        void tower_fire();
     private:
-        QTimer *timer;
-        int tower_damage;
+        QTimer *attaque_timer;
+        qreal attack_range; // Portée d'attaque de la tour en pixels
+        QGraphicsEllipseItem *range_indicator; // Indicateur de portée d'attaque
         int cost;
-        int range;
-
-
-
+        int damage;
 
 };
 

@@ -551,6 +551,8 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
@@ -1077,6 +1079,8 @@ CMakeFiles/TowerDefense.dir/MyScene.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Co
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
@@ -1633,6 +1637,8 @@ CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDe
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream \
@@ -2670,6 +2676,8 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/c++/12/iostream
@@ -3148,7 +3156,9 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
 
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp:
@@ -3409,6 +3419,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h:
@@ -3442,6 +3454,10 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/c++/12/numbers:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
 
@@ -3498,10 +3514,6 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
 
 /usr/include/c++/12/bits/allocator.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qsystemdetection.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
 
 /usr/include/c++/12/optional:
 
