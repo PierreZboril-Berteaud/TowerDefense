@@ -1,11 +1,18 @@
 #include "enemy.h"
 
-Enemy::Enemy() {
+Enemy::Enemy(){
     QString path = QDir::currentPath();
     QDir::setCurrent(QCoreApplication::applicationDirPath());
     QPixmap enemyPixmap(path + "/images/1.png");
+
+    PV =100;
+    dead = false;
+    damage = 10;
+
     enemyPixmapItem = new QGraphicsPixmapItem(enemyPixmap, this);
     enemyPixmapItem->setPos(-1000, 0);
+
+
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
     move_timer->start(150);
 
@@ -37,12 +44,7 @@ void Enemy::remove_enemy() {
 }
 
 bool Enemy::is_dead(){
-    if(get_pv() <= 0){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return dead;
 }
 int Enemy::get_pv(){
     return PV;
