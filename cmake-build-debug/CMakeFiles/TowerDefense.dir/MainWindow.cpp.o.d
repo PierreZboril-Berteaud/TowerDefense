@@ -486,6 +486,11 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: \
  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/c++/12/iostream \
+ /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
+ /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \

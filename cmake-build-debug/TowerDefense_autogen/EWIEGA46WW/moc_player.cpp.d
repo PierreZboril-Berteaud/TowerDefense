@@ -1,10 +1,5 @@
-/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MainWindow.h \
+/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/EWIEGA46WW/moc_player.cpp: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/player.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/moc_predefs.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h \
-  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -30,8 +25,6 @@
   /usr/include/c++/12/bits/c++0x_warning.h \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/chrono.h \
-  /usr/include/c++/12/bits/codecvt.h \
   /usr/include/c++/12/bits/concept_check.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
@@ -41,25 +34,17 @@
   /usr/include/c++/12/bits/exception.h \
   /usr/include/c++/12/bits/exception_defines.h \
   /usr/include/c++/12/bits/exception_ptr.h \
-  /usr/include/c++/12/bits/fs_dir.h \
-  /usr/include/c++/12/bits/fs_fwd.h \
-  /usr/include/c++/12/bits/fs_ops.h \
-  /usr/include/c++/12/bits/fs_path.h \
   /usr/include/c++/12/bits/functexcept.h \
   /usr/include/c++/12/bits/functional_hash.h \
   /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/ios_base.h \
-  /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/bits/iterator_concepts.h \
   /usr/include/c++/12/bits/list.tcc \
   /usr/include/c++/12/bits/locale_classes.h \
   /usr/include/c++/12/bits/locale_classes.tcc \
-  /usr/include/c++/12/bits/locale_conv.h \
   /usr/include/c++/12/bits/locale_facets.h \
   /usr/include/c++/12/bits/locale_facets.tcc \
-  /usr/include/c++/12/bits/locale_facets_nonio.h \
-  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/c++/12/bits/max_size_type.h \
   /usr/include/c++/12/bits/memoryfwd.h \
@@ -75,7 +60,6 @@
   /usr/include/c++/12/bits/postypes.h \
   /usr/include/c++/12/bits/predefined_ops.h \
   /usr/include/c++/12/bits/ptr_traits.h \
-  /usr/include/c++/12/bits/quoted_string.h \
   /usr/include/c++/12/bits/range_access.h \
   /usr/include/c++/12/bits/ranges_algo.h \
   /usr/include/c++/12/bits/ranges_algobase.h \
@@ -128,14 +112,12 @@
   /usr/include/c++/12/climits \
   /usr/include/c++/12/clocale \
   /usr/include/c++/12/cmath \
-  /usr/include/c++/12/codecvt \
   /usr/include/c++/12/compare \
   /usr/include/c++/12/concepts \
   /usr/include/c++/12/cstddef \
   /usr/include/c++/12/cstdint \
   /usr/include/c++/12/cstdlib \
   /usr/include/c++/12/cstring \
-  /usr/include/c++/12/ctime \
   /usr/include/c++/12/cwchar \
   /usr/include/c++/12/cwctype \
   /usr/include/c++/12/debug/assertions.h \
@@ -148,18 +130,13 @@
   /usr/include/c++/12/ext/numeric_traits.h \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/ext/type_traits.h \
-  /usr/include/c++/12/filesystem \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/initializer_list \
-  /usr/include/c++/12/iomanip \
   /usr/include/c++/12/ios \
   /usr/include/c++/12/iosfwd \
-  /usr/include/c++/12/iostream \
-  /usr/include/c++/12/istream \
   /usr/include/c++/12/iterator \
   /usr/include/c++/12/limits \
   /usr/include/c++/12/list \
-  /usr/include/c++/12/locale \
   /usr/include/c++/12/map \
   /usr/include/c++/12/memory \
   /usr/include/c++/12/new \
@@ -171,12 +148,10 @@
   /usr/include/c++/12/pstl/glue_algorithm_defs.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/glue_numeric_defs.h \
-  /usr/include/c++/12/ratio \
   /usr/include/c++/12/stdexcept \
   /usr/include/c++/12/streambuf \
   /usr/include/c++/12/string \
   /usr/include/c++/12/string_view \
-  /usr/include/c++/12/system_error \
   /usr/include/c++/12/tr1/bessel_function.tcc \
   /usr/include/c++/12/tr1/beta_function.tcc \
   /usr/include/c++/12/tr1/ell_integral.tcc \
@@ -201,7 +176,6 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -303,21 +277,14 @@
   /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
@@ -326,13 +293,11 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare_impl.h \
@@ -342,17 +307,9 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
@@ -362,12 +319,10 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
@@ -387,7 +342,6 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
@@ -412,7 +366,6 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcore-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
@@ -420,12 +373,9 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QKeyEvent \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
@@ -434,14 +384,15 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qglyphrun.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
@@ -449,64 +400,31 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

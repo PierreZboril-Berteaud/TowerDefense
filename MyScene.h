@@ -15,12 +15,19 @@
 
 #include "tower.h"
 #include "enemy.h"
-class MyScene : public QGraphicsScene, public QGraphicsRectItem {
+#include "health.h"
+#include "score.h"
+class MyScene : public QGraphicsScene{
     Q_OBJECT
 
     public:
-
         MyScene(QObject* parent = nullptr);
+
+        QGraphicsScene* scene;
+        Health* health;
+        Score* score;
+
+
         //void keyPressEvent(QKeyEvent * event);
         void deleteEnemy();
         virtual ~MyScene();

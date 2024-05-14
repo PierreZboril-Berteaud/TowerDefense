@@ -1,8 +1,16 @@
 #include "MyScene.h"
-#include "menu.h"
 #include "tower.h"
 
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
+    scene = new QGraphicsScene();
+    scene->setSceneRect(0,0,1280,800);
+
+
+    score = new Score();
+    scene->addItem(score);
+    health = new Health();
+    scene->addItem(health);
+
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
     timer->start(1000);

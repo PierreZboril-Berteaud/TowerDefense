@@ -131,13 +131,25 @@
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h">
 			<Option target="TowerDefense"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/grid.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/grid.h">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h">
+			<Option target="TowerDefense"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp">
 			<Option target="TowerDefense"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.cpp">
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.cpp">
 			<Option target="TowerDefense"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/menu.h">
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h">
 			<Option target="TowerDefense"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp">

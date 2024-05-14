@@ -238,6 +238,54 @@ enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/enemy.cpp.s
 .PHONY : enemy.cpp.s
 
+grid.o: grid.cpp.o
+.PHONY : grid.o
+
+# target to build an object file
+grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/grid.cpp.o
+.PHONY : grid.cpp.o
+
+grid.i: grid.cpp.i
+.PHONY : grid.i
+
+# target to preprocess a source file
+grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/grid.cpp.i
+.PHONY : grid.cpp.i
+
+grid.s: grid.cpp.s
+.PHONY : grid.s
+
+# target to generate assembly for a file
+grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/grid.cpp.s
+.PHONY : grid.cpp.s
+
+health.o: health.cpp.o
+.PHONY : health.o
+
+# target to build an object file
+health.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/health.cpp.o
+.PHONY : health.cpp.o
+
+health.i: health.cpp.i
+.PHONY : health.i
+
+# target to preprocess a source file
+health.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/health.cpp.i
+.PHONY : health.cpp.i
+
+health.s: health.cpp.s
+.PHONY : health.s
+
+# target to generate assembly for a file
+health.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/health.cpp.s
+.PHONY : health.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -262,29 +310,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-menu.o: menu.cpp.o
-.PHONY : menu.o
+score.o: score.cpp.o
+.PHONY : score.o
 
 # target to build an object file
-menu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/menu.cpp.o
-.PHONY : menu.cpp.o
+score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/score.cpp.o
+.PHONY : score.cpp.o
 
-menu.i: menu.cpp.i
-.PHONY : menu.i
+score.i: score.cpp.i
+.PHONY : score.i
 
 # target to preprocess a source file
-menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/menu.cpp.i
-.PHONY : menu.cpp.i
+score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/score.cpp.i
+.PHONY : score.cpp.i
 
-menu.s: menu.cpp.s
-.PHONY : menu.s
+score.s: score.cpp.s
+.PHONY : score.s
 
 # target to generate assembly for a file
-menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/menu.cpp.s
-.PHONY : menu.cpp.s
+score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/score.cpp.s
+.PHONY : score.cpp.s
 
 tower.o: tower.cpp.o
 .PHONY : tower.o
@@ -332,12 +380,18 @@ help:
 	@echo "... enemy.o"
 	@echo "... enemy.i"
 	@echo "... enemy.s"
+	@echo "... grid.o"
+	@echo "... grid.i"
+	@echo "... grid.s"
+	@echo "... health.o"
+	@echo "... health.i"
+	@echo "... health.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... menu.o"
-	@echo "... menu.i"
-	@echo "... menu.s"
+	@echo "... score.o"
+	@echo "... score.i"
+	@echo "... score.s"
 	@echo "... tower.o"
 	@echo "... tower.i"
 	@echo "... tower.s"
