@@ -1,13 +1,12 @@
 #include "MyScene.h"
-#include "tower.h"
+
 
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     scene = new QGraphicsScene();
-    scene->setSceneRect(0,0,1280,800);
-
 
     score = new Score();
     scene->addItem(score);
+    qDebug()<<"Constructeur appelé";
     health = new Health();
     scene->addItem(health);
 
