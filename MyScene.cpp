@@ -1,18 +1,23 @@
 #include "MyScene.h"
 
-
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
-    scene = new QGraphicsScene();
+    qDebug() << "Constructeur appelé";
 
-    score = new Score();
-    scene->addItem(score);
-    qDebug()<<"Constructeur appelé";
-    health = new Health();
-    scene->addItem(health);
+    QPixmap map("./images/1280.jng");
+    this->setSceneRect(0,0,map.width() * 0.7,map.height() * 0.7);
 
+    // Création de l'objet Score et ajout à la scène principale
+    Score* score = new Score();
+    addItem(score);
+    // Création de l'objet Health et ajout à la scène principale
+    Health* health = new Health();
+    health->setPos(health->x()+750,health->y()+500);
+    addItem(health);
+
+    // Création et démarrage du timer pour générer les ennemis
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(1000);
+    timer->start(10000);
 
 }
 /*void MyScene::keyPressEvent(QKeyEvent * event){

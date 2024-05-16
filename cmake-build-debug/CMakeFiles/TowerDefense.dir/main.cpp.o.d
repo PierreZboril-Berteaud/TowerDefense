@@ -420,9 +420,6 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
@@ -431,6 +428,7 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
@@ -461,6 +459,10 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \

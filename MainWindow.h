@@ -17,12 +17,12 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
 private :
-    MyScene* mainScene;
-    QGraphicsView* mainView;
-    QPushButton* playButton;
-    QPushButton* leaderboardButton;
-    QPushButton* exitButton;
-    QTableWidget *leaderboardTable;
+    MyScene* mainScene=nullptr;
+    QGraphicsView* mainView=nullptr;
+    QPushButton* playButton=nullptr;
+    QPushButton* leaderboardButton=nullptr;
+    QPushButton* exitButton=nullptr;
+    QTableWidget *leaderboardTable=nullptr;
 
 
 

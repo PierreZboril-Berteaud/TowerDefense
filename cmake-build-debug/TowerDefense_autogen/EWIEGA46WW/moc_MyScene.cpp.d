@@ -463,6 +463,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \

@@ -1,7 +1,6 @@
 #ifndef CPP_QT_TPMINIPROJET_MYSCENE_H
 #define CPP_QT_TPMINIPROJET_MYSCENE_H
 
-#include <QGraphicsScene>
 #include <QGraphicsRectItem>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsView>
@@ -9,6 +8,8 @@
 #include <QTimer>
 #include <QKeyEvent>
 #include <QObject>
+#include <QWidget>
+#include <QGraphicsScene>
 #include <QGraphicsRectItem>
 #include <QGraphicsSceneMouseEvent>
 
@@ -23,9 +24,7 @@ class MyScene : public QGraphicsScene{
     public:
         MyScene(QObject* parent = nullptr);
 
-        QGraphicsScene* scene;
-        Health* health;
-        Score* score;
+
 
 
         //void keyPressEvent(QKeyEvent * event);
@@ -33,7 +32,7 @@ class MyScene : public QGraphicsScene{
         virtual ~MyScene();
 
     private:
-        QTimer* timer;
+        QTimer* timer= nullptr;
         int nbEnemy = 5;
         QList<Tower*> m_towers;//stock les tours posées
     private slots:

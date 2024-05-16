@@ -477,6 +477,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
