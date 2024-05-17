@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit);
     layout->addWidget(exitButton);
 
-    setFixedSize(1280, 720);
+    setFixedSize(1920, 1080);
 }
 
 MainWindow::~MainWindow() {}
@@ -41,21 +41,10 @@ void MainWindow::slot_playGame() {
     this->mainView = new QGraphicsView;
     this->mainView->setScene(mainScene);
     this->setCentralWidget(mainView);
-    QString path = QDir::currentPath();
-    QDir::setCurrent(QCoreApplication::applicationDirPath());
-    QString Path_image = path+"/images/1280.jpg";
-    QPixmap backgroundImage(Path_image);
-    if (!backgroundImage.isNull()) {
-        QString styleSheet = "background-image: url(" + Path_image + ");";
-        styleSheet += " background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;";
+    this->mainView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->mainView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    setFixedSize(1920, 1080);
 
-        this->centralWidget()->setStyleSheet(styleSheet);
-
-    }
-    //si on click sur agrandir la fenetre ça module la taille de l'image
-    if(this->centralWidget()->size() != backgroundImage.size()){
-        this->centralWidget()->resize(backgroundImage.size());
-    }
 
 }
 

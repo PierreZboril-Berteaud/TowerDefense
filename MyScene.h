@@ -18,6 +18,7 @@
 #include "enemy.h"
 #include "health.h"
 #include "score.h"
+
 class MyScene : public QGraphicsScene{
     Q_OBJECT
 
@@ -25,31 +26,46 @@ class MyScene : public QGraphicsScene{
         MyScene(QObject* parent = nullptr);
 
 
-
-
         //void keyPressEvent(QKeyEvent * event);
-        void deleteEnemy();
+        //void deleteEnemy();
         virtual ~MyScene();
 
     private:
         QTimer* timer= nullptr;
-        int nbEnemy = 5;
-        QList<Tower*> m_towers;//stock les tours posées
+        void buildMap();
+        void paintEvent(QPaintEvent* event);
+        std::vector<Tile*> map;
     private slots:
-            void spawnEnemy();
+
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
+    class ToolTip;
+    ToolTip* tooltip;
+
+    class ToolTip {
+    private:
+
+        Image *background;
+
+
+        void resizeBackground();
+
+    public:
+        ToolTip(Image *s, Image *s_u, Image *, Image *c_a);
+
+        ToolTip(Image *c, Image *c_a);
+
+        ~ToolTip();
+
+        void moveTo(QPointF position);
+
+        void paint(QPainter *p);
+    };
 
 
 };
 
-class MyView: public QGraphicsView{
-protected:
 
-    virtual void resizeEvent (QResizeEvent* event)
-    {
-        this->fitInView(sceneRect());
-    }
-};
+
 
 #endif //CPP_QT_TPMINIPROJET_MYSCENE_H

@@ -6,7 +6,7 @@ Score::Score(QGraphicsItem* parent): QGraphicsTextItem(parent){
     updateScoreText();
     setDefaultTextColor(Qt::blue);
     //setFont(QFont("times",16));
-    setPos(0, 0);
+    setPos(0, 30);
 }
 void Score::increase_score() {
     score++;

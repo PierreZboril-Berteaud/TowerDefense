@@ -131,25 +131,34 @@
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h">
 			<Option target="TowerDefense"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/grid.cpp">
-			<Option target="TowerDefense"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/grid.h">
-			<Option target="TowerDefense"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.cpp">
 			<Option target="TowerDefense"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h">
 			<Option target="TowerDefense"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/images.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/images.h">
+			<Option target="TowerDefense"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/object.cpp">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/object.h">
 			<Option target="TowerDefense"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.cpp">
 			<Option target="TowerDefense"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h">
+			<Option target="TowerDefense"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tile.h">
 			<Option target="TowerDefense"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp">
