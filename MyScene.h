@@ -33,11 +33,13 @@ class MyScene : public QGraphicsScene{
     private:
         QTimer* timer= nullptr;
         void buildMap();
+        int nbEnemy=5;
 
     private slots:
 
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
+        void spawnEnemy();
         QPixmap* mapPixmap;
 
 
