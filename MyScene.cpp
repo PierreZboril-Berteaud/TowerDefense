@@ -2,10 +2,15 @@
 #include <QGraphicsScene>
 #include <QApplication>
 #include <QPainter>
-
+#include <QPixmap>
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
+    mapPixmap = new QPixmap("images/mapFinale.png");
+    QGraphicsPixmapItem* pixmapItem = addPixmap(*mapPixmap);
+    // Définit la position de la pixmap sur la scène
+    pixmapItem->setPos(0, 0);
+
 
     // Création de l'objet Score et ajout à la scène principale
     Score* score = new Score();
@@ -27,3 +32,4 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
         addItem(tower);
     }
 }
+MyScene::~MyScene(){}

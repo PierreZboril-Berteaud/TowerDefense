@@ -11,6 +11,6 @@ file (GLOB_RECURSE sourceCode src/*.cpp src/*.h)
 
 qt_standard_project_setup()
 
-add_executable(TowerDefense ${sourceCode} main.cpp MyScene.cpp MainWindow.cpp enemy.cpp tower.cpp score.cpp health.cpp  object.cpp tile.h images.cpp images.h images.h)
+add_executable(TowerDefense ${sourceCode} main.cpp MyScene.cpp MainWindow.cpp enemy.cpp tower.cpp score.cpp health.cpp)
 
 target_link_libraries(TowerDefense PRIVATE Qt6::Widgets)

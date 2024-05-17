@@ -209,27 +209,9 @@
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/images.h",
-			"MU",
-			"EWIEGA46WW/moc_images.cpp",
-			null
-		],
-		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/object.h",
-			"MU",
-			"EWIEGA46WW/moc_object.cpp",
-			null
-		],
-		[
 			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h",
 			"MU",
 			"EWIEGA46WW/moc_score.cpp",
-			null
-		],
-		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tile.h",
-			"MU",
-			"EWIEGA46WW/moc_tile.cpp",
 			null
 		],
 		[
@@ -317,17 +299,7 @@
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/images.cpp",
-			"MU",
-			null
-		],
-		[
 			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp",
-			"MU",
-			null
-		],
-		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/object.cpp",
 			"MU",
 			null
 		],

@@ -262,30 +262,6 @@ health.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/health.cpp.s
 .PHONY : health.cpp.s
 
-images.o: images.cpp.o
-.PHONY : images.o
-
-# target to build an object file
-images.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/images.cpp.o
-.PHONY : images.cpp.o
-
-images.i: images.cpp.i
-.PHONY : images.i
-
-# target to preprocess a source file
-images.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/images.cpp.i
-.PHONY : images.cpp.i
-
-images.s: images.cpp.s
-.PHONY : images.s
-
-# target to generate assembly for a file
-images.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/images.cpp.s
-.PHONY : images.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -309,30 +285,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-object.o: object.cpp.o
-.PHONY : object.o
-
-# target to build an object file
-object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/object.cpp.o
-.PHONY : object.cpp.o
-
-object.i: object.cpp.i
-.PHONY : object.i
-
-# target to preprocess a source file
-object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/object.cpp.i
-.PHONY : object.cpp.i
-
-object.s: object.cpp.s
-.PHONY : object.s
-
-# target to generate assembly for a file
-object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/object.cpp.s
-.PHONY : object.cpp.s
 
 score.o: score.cpp.o
 .PHONY : score.o
@@ -407,15 +359,9 @@ help:
 	@echo "... health.o"
 	@echo "... health.i"
 	@echo "... health.s"
-	@echo "... images.o"
-	@echo "... images.i"
-	@echo "... images.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... object.o"
-	@echo "... object.i"
-	@echo "... object.s"
 	@echo "... score.o"
 	@echo "... score.i"
 	@echo "... score.s"

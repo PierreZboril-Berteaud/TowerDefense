@@ -33,34 +33,12 @@ class MyScene : public QGraphicsScene{
     private:
         QTimer* timer= nullptr;
         void buildMap();
-        void paintEvent(QPaintEvent* event);
-        std::vector<Tile*> map;
+
     private slots:
 
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
-    class ToolTip;
-    ToolTip* tooltip;
-
-    class ToolTip {
-    private:
-
-        Image *background;
-
-
-        void resizeBackground();
-
-    public:
-        ToolTip(Image *s, Image *s_u, Image *, Image *c_a);
-
-        ToolTip(Image *c, Image *c_a);
-
-        ~ToolTip();
-
-        void moveTo(QPointF position);
-
-        void paint(QPainter *p);
-    };
+        QPixmap* mapPixmap;
 
 
 };
