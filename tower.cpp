@@ -8,7 +8,7 @@ Tower::Tower(){
     QPixmap towerPixmap(path + "/images/redTower.png");
     TowerPixmapItem = new QGraphicsPixmapItem(towerPixmap,this);
 
-    attack_range = 125;
+    attack_range = 200;
     range_indicator = new QGraphicsEllipseItem(-attack_range+35, -attack_range+45, attack_range * 2, attack_range * 2, this);
     range_indicator->setPen(QPen(Qt::black)); // Rendre la bordure de couleur noir
     range_indicator->setOpacity(0.3);

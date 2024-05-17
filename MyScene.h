@@ -27,19 +27,20 @@ class MyScene : public QGraphicsScene{
 
 
         //void keyPressEvent(QKeyEvent * event);
-        //void deleteEnemy();
+        //void deleteEnemy()
         virtual ~MyScene();
+        int nbEnemy=1;
+        void initialize();
 
     private:
         QTimer* timer= nullptr;
-        void buildMap();
-        int nbEnemy=5;
 
     private slots:
+        void spawnEnemy();
 
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
-        void spawnEnemy();
+
         QPixmap* mapPixmap;
 
 

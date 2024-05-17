@@ -18,11 +18,9 @@ class Enemy: public QObject,public QGraphicsRectItem{
         bool dead;
         int damage;
 
-        int spawnX = -1280;
-        int spawnY =-300;
-
         QTimer* move_timer =  new QTimer(this);
     public:
+
         QGraphicsPixmapItem *enemyPixmapItem;
         Enemy();
         ~Enemy();
@@ -38,7 +36,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
         void set_damage(int damage);
         void set_pv(int PV);
 
-        //
+
         void inflict_damage(int damage);
         void remove_enemy();
 

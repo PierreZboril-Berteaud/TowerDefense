@@ -4,7 +4,6 @@ Health::Health(QGraphicsItem* parent): QGraphicsTextItem(parent){
     setPlainText(QString("PV: ") + QString::number(health));
     setDefaultTextColor(Qt::red);
     setFont(QFont("times",16));
-    setPos(0,0);
 }
 void Health::decrease_pv(){
     health--;

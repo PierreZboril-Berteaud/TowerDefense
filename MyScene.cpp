@@ -1,7 +1,6 @@
 #include "MyScene.h"
 #include <QGraphicsScene>
 #include <QApplication>
-#include <QPainter>
 #include <QPixmap>
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
@@ -19,9 +18,13 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     Health* health = new Health();
     addItem(health);
 
+    /*Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
+    enemy->setPos(0,460);
+    addItem(enemy);*/ // Ajoute l'ennemi à la scène
+
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(2000);
+    timer->start(100);
 
 }
 
@@ -37,15 +40,16 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     }
 }
 void MyScene::spawnEnemy() {
-    if (nbEnemy > 0) { // Vérifie s'il reste encore des ennemis à faire apparaître
-        Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
-        enemy->setPos(0,450);
-        enemy->setPos(0,0);
-        addItem(enemy); // Ajoute l'ennemi à la scène
-        nbEnemy--; // Décrémente le nombre d'ennemis restants
+    while(nbEnemy>0) {
+        // Crée un nouvel objet Enemy
+        Enemy *enemy = new Enemy();
 
-    } else {
-        timer->stop(); // Arrête le timer lorsque tous les ennemis ont été ajoutés
+        // Positionne l'ennemi à l'emplacement initial
+        enemy->setPos(0, 460);
+
+        // Ajoute l'ennemi à la scène principale
+        addItem(enemy);
+        nbEnemy--;
     }
 
 }
