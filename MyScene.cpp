@@ -2,6 +2,7 @@
 #include <QGraphicsScene>
 #include <QApplication>
 #include <QPixmap>
+#include <QPen>
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
@@ -18,10 +19,6 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     Health* health = new Health();
     addItem(health);
 
-    /*Enemy *enemy = new Enemy(); // Crée un nouvel ennemi
-    enemy->setPos(0,460);
-    addItem(enemy);*/ // Ajoute l'ennemi à la scène
-
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
     timer->start(100);
@@ -31,12 +28,17 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
-        QPointF towerPos = event->scenePos() - QPointF(35, 45); //Centre l'image par rapport au curseur de la souris
+        QPointF towerPos = event->scenePos(); //Centre l'image par rapport au curseur de la souris
 
         //Fais spawn une tour
         Tower *tower = new Tower();
         tower->setPos(towerPos);
-        addItem(tower);
+        if (tower->is_valid_place()) {
+            addItem(tower);
+        } else {
+            //delete tower; // Supprime la tourelle si la position n'est pas valide
+            qDebug() << "Position non valide pour placer la tourelle.";
+        }
     }
 }
 void MyScene::spawnEnemy() {
