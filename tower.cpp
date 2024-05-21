@@ -4,7 +4,7 @@
 
 Tower::Tower(){
 
-    QGraphicsRectItem* towerRect = new QGraphicsRectItem(-15, -20, 30, 40, this); // Position et taille du rectangle
+    QGraphicsRectItem* towerRect = new QGraphicsRectItem(-25, -30, 50, 60, this); // Position et taille du rectangle
     towerRect->setPen(QPen(Qt::red)); // Définit le contour en rouge
 
     attack_range = 200;
