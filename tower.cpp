@@ -32,39 +32,8 @@ bool Tower::is_valid_place(){
     QRectF NonValidPlace5(700,640, 400, 100);
     QRectF NonValidPlace6(1000,440, 100, 200);
     QRectF NonValidPlace7(1100,440, 800, 100);
-    if(NonValidPlace1.contains(sceneBoundingRect())){
+    if(NonValidPlace1.contains(sceneBoundingRect())||NonValidPlace2.contains(sceneBoundingRect())||NonValidPlace3.contains(sceneBoundingRect())||NonValidPlace4.contains(sceneBoundingRect())||NonValidPlace5.contains(sceneBoundingRect())||NonValidPlace6.contains(sceneBoundingRect())||NonValidPlace7.contains(sceneBoundingRect())) {
         return false;
-    }
-    else{
-        if(NonValidPlace2.contains(sceneBoundingRect())){
-            return false;
-        }
-        else{
-            if(NonValidPlace3.contains(sceneBoundingRect())){
-                return false;
-            }
-            else{
-                if(NonValidPlace4.contains(sceneBoundingRect())){
-                    return false;
-                }
-                else{
-                    if(NonValidPlace5.contains(sceneBoundingRect())){
-                        return false;
-                    }
-                    else{
-                        if(NonValidPlace6.contains(sceneBoundingRect())){
-                            return false;
-                        }
-                        else{
-                            if(NonValidPlace7.contains(sceneBoundingRect())){
-                                return false;
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
     }
     return true;
 

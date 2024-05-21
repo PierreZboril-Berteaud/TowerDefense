@@ -13,7 +13,7 @@ Enemy::Enemy(){
 
 
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
-    move_timer->start(150);
+    move_timer->start(500);
 
 }
 

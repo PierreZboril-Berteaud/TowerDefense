@@ -2,7 +2,7 @@
 #include <QGraphicsScene>
 #include <QApplication>
 #include <QPixmap>
-#include <QPen>
+#include <QScrollBar>
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
@@ -21,7 +21,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(100);
+    timer->start(1000);
 
 }
 
@@ -55,4 +55,32 @@ void MyScene::spawnEnemy() {
     }
 
 }
+void MyScene::keyPressEvent(QKeyEvent* event) {
+    switch (event->key()) {
+        case Qt::Key_Z:
+            zoomIn();
+            break;
+        case Qt::Key_S:
+            zoomOut();
+            break;
+        default:
+            QGraphicsScene::keyPressEvent(event);
+    }
+}
+
+
+void MyScene::zoomIn() {
+    // Augmente le facteur d'échelle
+    scaleFactor *= 1.1;
+    // Applique le zoom à la vue de la scène
+    views().first()->scale(1.1, 1.1);
+}
+
+void MyScene::zoomOut() {
+    // Diminue le facteur d'échelle
+    scaleFactor /= 1.1;
+    // Applique le dézoom à la vue de la scène
+    views().first()->scale(1 / 1.1, 1 / 1.1);
+}
+
 MyScene::~MyScene(){}

@@ -26,14 +26,16 @@ class MyScene : public QGraphicsScene{
         MyScene(QObject* parent = nullptr);
 
 
-        //void keyPressEvent(QKeyEvent * event);
+        void keyPressEvent(QKeyEvent * event);
         //void deleteEnemy()
         virtual ~MyScene();
-        int nbEnemy=1;
-        void initialize();
+        int nbEnemy=100;
 
+        void zoomIn();
+        void zoomOut();
     private:
         QTimer* timer= nullptr;
+        qreal scaleFactor;  // Facteur d'échelle pour le zoom
 
     private slots:
         void spawnEnemy();

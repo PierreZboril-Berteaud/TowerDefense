@@ -1103,8 +1103,9 @@ CMakeFiles/TowerDefense.dir/MyScene.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Co
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
 
 CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDefense_autogen/mocs_compilation.cpp \
   /usr/include/stdc-predef.h \
@@ -4050,7 +4051,7 @@ TowerDefense_autogen/EWIEGA46WW/moc_enemy.cpp:
 
 TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QPen:
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp:
 
@@ -4509,6 +4510,8 @@ TowerDefense_autogen/EWIEGA46WW/moc_tower.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h:
 
 /usr/include/c++/12/iomanip:
 
