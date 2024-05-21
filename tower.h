@@ -21,6 +21,7 @@ class Tower :public QObject,public QGraphicsRectItem {
     public:
         QGraphicsPixmapItem *TowerPixmapItem;
         Tower();
+        bool is_valid_place();
         virtual ~Tower();
     public slots:
         void tower_fire();

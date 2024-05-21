@@ -21,6 +21,9 @@ Tower::Tower(){
 void Tower::tower_fire(){
     qDebug()<<"Fire";
 }
+bool Tower::is_valid_place(){
+
+}
 Tower::~Tower() {
     scene()->removeItem(TowerPixmapItem); // Assurez-vous de retirer l'élément de la scène avant de le supprimer
     delete attaque_timer;
