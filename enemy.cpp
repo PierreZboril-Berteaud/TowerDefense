@@ -12,6 +12,7 @@ Enemy::Enemy(){
     enemyPixmapItem = new QGraphicsPixmapItem(enemyPixmap, this);
 
 
+
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
     move_timer->start(500);
 

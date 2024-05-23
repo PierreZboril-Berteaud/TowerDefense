@@ -29,13 +29,23 @@ class MyScene : public QGraphicsScene{
         void keyPressEvent(QKeyEvent * event);
         //void deleteEnemy()
         virtual ~MyScene();
-        int nbEnemy=100;
 
         void zoomIn();
         void zoomOut();
+
+        int get_nbEnemy() {return nbEnemy;}
+        void set_nbEnemy(int nbEnemy) {this->nbEnemy = nbEnemy;}
+        int get_wave() {return wave_count;}
+        int set_wave(int wave) {this->wave_count = wave;}
+        void startNextWave();
     private:
         QTimer* timer= nullptr;
+        QTimer* waveTimer=nullptr;
         qreal scaleFactor;  // Facteur d'échelle pour le zoom
+        int wave_count;
+        int nbEnemy;
+        int enemiesSpawned;
+
 
     private slots:
         void spawnEnemy();
@@ -51,4 +61,4 @@ class MyScene : public QGraphicsScene{
 
 
 
-#endif //CPP_QT_TPMINIPROJET_MYSCENE_H
+#endif
