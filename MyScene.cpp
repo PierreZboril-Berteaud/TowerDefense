@@ -1,8 +1,10 @@
 #include "MyScene.h"
+#include "health.h"
 #include <QGraphicsScene>
 #include <QApplication>
 #include <QPixmap>
 #include <QScrollBar>
+
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
@@ -16,7 +18,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     Score* score = new Score();
     addItem(score);
     // Création de l'objet Health et ajout à la scène principale
-    Health* health = new Health();
+    health = new Health();
     addItem(health);
 
     wave_count =1;
@@ -51,7 +53,7 @@ void MyScene::spawnEnemy() {
         Enemy* enemy = new Enemy();
         enemy->setPos(0, 460);
         addItem(enemy);
-
+        connect(enemy, &Enemy::reachedEnd, this, &MyScene::reachedEnd);
         enemiesSpawned++;
     } else {
         timer->stop();
@@ -69,6 +71,11 @@ void MyScene::startNextWave() {
     timer->start(2000);
 }
 
+void MyScene::reachedEnd() {
+    if (health) { // Vérifie si health est un pointeur valide
+        health->decrease_pv(); // Diminue la santé de 10
+    }
+}
 
 
 void MyScene::keyPressEvent(QKeyEvent* event) {

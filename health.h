@@ -10,10 +10,11 @@ public:
     Health(QGraphicsItem* parent=nullptr);
     ~Health();
     void decrease_pv();
-    int get_health();
-
+    int get_health() {return health;}
+    void set_health(int pv);
 private:
     int health;
+
 
 };
 

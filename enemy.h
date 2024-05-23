@@ -19,6 +19,8 @@ class Enemy: public QObject,public QGraphicsRectItem{
         int damage;
 
         QTimer* move_timer =  new QTimer(this);
+    signals:
+        void reachedEnd();
     public:
 
         QGraphicsPixmapItem *enemyPixmapItem;

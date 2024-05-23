@@ -14,12 +14,11 @@ Enemy::Enemy(){
 
 
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
-    move_timer->start(500);
+    move_timer->start(50);
 
 }
 
 Enemy::~Enemy() {
-    delete move_timer;
 }
 
 void Enemy::move() {
@@ -58,8 +57,10 @@ void Enemy::move() {
         }
             // Arrête le déplacement lorsque l'ennemi atteint la destination
         else {
-            move_timer->stop();
-            delete move_timer;
+            qDebug() << "Enemy reached the end";
+            emit reachedEnd();
+
+            remove_enemy();
             return;
         }
         // Met à jour la position de l'ennemi
@@ -68,7 +69,11 @@ void Enemy::move() {
 
 
 void Enemy::remove_enemy() {
-    move_timer->stop();
+    if (move_timer) {
+        move_timer->stop();
+        delete move_timer;
+        move_timer = nullptr;
+    }
     scene()->removeItem(this);
     delete this;
 }
