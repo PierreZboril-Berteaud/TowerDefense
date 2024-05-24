@@ -40,16 +40,21 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
         QPointF towerPos = event->scenePos(); //Centre l'image par rapport au curseur de la souris
         towerPos.setX(towerPos.x() - 10);
-        towerPos.setY(towerPos.y()-60);
+        towerPos.setY(towerPos.y() - 60);
         //Fais spawn une tour
-        
         Tower *tower = new Tower();
-        tower->setPos(towerPos);
-        if (tower->is_valid_place()) {
-            addItem(tower);
+        if (gold->get_gold() >= tower->get_cost()) {
+            tower->setPos(towerPos);
+            if (tower->is_valid_place()) {
+                addItem(tower);
+                gold->decrease_gold(tower->get_cost());
+                //gold->set_gold(gold->get_gold() - tower->get_cost());
+
+                qDebug()<<"Il vous reste:"<<gold->get_gold()<<"Gold";
+                qDebug()<<"Le prix de la tour est:"<<tower->get_cost();
+            }
         } else {
-            //delete tower; // Supprime la tourelle si la position n'est pas valide
-            qDebug() << "Position non valide pour placer la tourelle.";
+            qDebug() << "Pas assez d'argent";
         }
     }
 }
@@ -160,15 +165,6 @@ void MyScene::game_over(){
 
 
     emit gameOver();
-}
-void MyScene::delete_score(){
-    if (score) {
-        removeItem(score);
-        delete score;
-        score = nullptr;
-        qDebug()<<"test score: ok!";
-    }
-
 }
 
 MyScene::~MyScene(){}
