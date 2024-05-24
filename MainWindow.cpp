@@ -110,6 +110,28 @@ void MainWindow::slot_showLeaderboard() {
     leaderboardTable->show();
 }
 void MainWindow::game_over() {
+    if (mainScene) {
+        qDebug() << "mainScene is valid"; // Debugging output
+
+        // Attempt to get the current score
+        int currentScore = mainScene->getCurrentScore();
+
+        qDebug() << "Current Score:";  // Debugging output
+
+        // Open the file in append mode using std::ofstream
+        std::ofstream file("../Leaderboard.txt", std::ios::app);
+        if (file.is_open()) {
+            qDebug() << "File opened successfully.";  // Debugging output
+            file << currentScore << "\n";
+            file.close();
+            qDebug() << "Score written to file and file closed"; // Debugging output
+        } else {
+            qDebug() << "Failed to open the file";  // Debugging output
+            QMessageBox::warning(this, "Error", "Could not open the leaderboard file to save the score.");
+        }
+    } else {
+        qDebug() << "mainScene is null";  // Debugging output
+    }
     slot_showMainMenu();
 }
 

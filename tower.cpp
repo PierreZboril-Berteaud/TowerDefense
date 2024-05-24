@@ -5,17 +5,19 @@
 
 
 Tower::Tower(){
-    QPixmap towerTexture("/images/towerTexture.jpg");
-    
+    QPixmap towerTexture("images/tower.png");
+
 
     QGraphicsRectItem* towerRect = new QGraphicsRectItem(-25, -30, 50, 60, this); // Position et taille du rectangle
-    towerRect->setPen(QPen(Qt::red)); // Définit le contour en rouge
+    towerRect->setPen(QPen(Qt::transparent)); // Définit le contour en rouge
+    QGraphicsPixmapItem* towerTextureItem = new QGraphicsPixmapItem(towerTexture, towerRect);
+    towerTextureItem->setOffset(-25, -30); // Positionner la texture sur le rectangle
 
     damage=10;
     attack_range = 250; // Définissez la portée de la tour
     range_indicator = new QGraphicsEllipseItem(-attack_range, -attack_range, attack_range * 2, attack_range * 2, this);
-    range_indicator->setPen(QPen(Qt::NoPen)); // Pas de contour
-    range_indicator->setBrush(QColor(255, 0, 0, 50)); // Remplissage rouge avec une faible opacité
+    range_indicator->setPen(QPen(Qt::black)); // Rend la bordure de couleur noire
+    range_indicator->setOpacity(0.3); // Opacité réduite pour l'indicateur de portée
 
 
     // Crée un timer pour l'attaque de la tour

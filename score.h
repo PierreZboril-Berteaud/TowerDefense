@@ -5,12 +5,13 @@
 #include <QFont>
 
 class Score :public QGraphicsTextItem{
+    Q_OBJECT
 public :
     Score(QGraphicsItem* parent=nullptr);
     ~Score();
     void increase_score();
     int getScore();
-    void updateScoreText();
+
 
 private:
     int score;

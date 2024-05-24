@@ -37,7 +37,8 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
         QPointF towerPos = event->scenePos(); //Centre l'image par rapport au curseur de la souris
-
+        towerPos.setX(towerPos.x() - 10);
+        towerPos.setY(towerPos.y()-60);
         //Fais spawn une tour
         Tower *tower = new Tower();
         tower->setPos(towerPos);
@@ -56,6 +57,7 @@ void MyScene::spawnEnemy() {
         enemy->setPos(0, 460);
         addItem(enemy);
         connect(enemy, &Enemy::reachedEnd, this, &MyScene::reachedEnd);
+        connect(enemy, &Enemy::increase_score, score, &Score::increase_score);
         enemiesSpawned++;
         qDebug()<<enemy->pos();
     } else {
@@ -63,7 +65,7 @@ void MyScene::spawnEnemy() {
         waveTimer = new QTimer(this);
         waveTimer->setSingleShot(true); //le timer ne s'execute qu'une fois
         connect(waveTimer, &QTimer::timeout, this, &MyScene::startNextWave);
-        waveTimer->start(3000);
+        waveTimer->start(10000);
     }
 }
 
@@ -71,12 +73,19 @@ void MyScene::startNextWave() {
     wave_count++;
     nbEnemy *= 2;
     enemiesSpawned = 0;
-    timer->start(2000);
+    timer->start(1500);
 }
-
+int MyScene::getCurrentScore() const {
+    return score->getScore();
+}
 void MyScene::reachedEnd() {
     if (health) { // Vérifie si health est un pointeur valide
         health->decrease_pv(); // Diminue la santé de 10
+    }
+}
+void MyScene::increase_score(){
+    if(score){
+        score->increase_score();
     }
 }
 
@@ -125,12 +134,6 @@ void MyScene::game_over(){
         qDebug()<<"test wavetimer: ok!";
     }
 
-    if (score) {
-        removeItem(score);
-        delete score;
-        score = nullptr;
-        qDebug()<<"test score: ok!";
-    }
 
     /*if (health) {
         removeItem(health);
@@ -149,6 +152,15 @@ void MyScene::game_over(){
 
 
     emit gameOver();
+}
+void MyScene::delete_score(){
+    if (score) {
+        removeItem(score);
+        delete score;
+        score = nullptr;
+        qDebug()<<"test score: ok!";
+    }
+
 }
 
 MyScene::~MyScene(){}

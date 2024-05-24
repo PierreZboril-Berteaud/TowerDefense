@@ -23,6 +23,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
         QTimer* move_timer =  new QTimer(this);
     signals:
         void reachedEnd();
+        void increase_score();
     public:
 
         QGraphicsPixmapItem *enemyPixmapItem;

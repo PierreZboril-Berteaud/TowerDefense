@@ -37,6 +37,8 @@ class MyScene : public QGraphicsScene{
         void set_nbEnemy(int nbEnemy) {this->nbEnemy = nbEnemy;}
         int get_wave() {return wave_count;}
         int set_wave(int wave) {this->wave_count = wave;}
+        int getCurrentScore() const;
+        void delete_score();
 
         signals:
             void gameOver();
@@ -57,6 +59,7 @@ class MyScene : public QGraphicsScene{
         void spawnEnemy();
         void reachedEnd();
         void startNextWave();
+        void increase_score();
     public slots:
         void game_over();
 

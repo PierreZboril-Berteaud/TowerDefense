@@ -3,19 +3,18 @@
 
 Score::Score(QGraphicsItem* parent): QGraphicsTextItem(parent){
     score = 0;
-    updateScoreText();
+    setPlainText(QString("Score: ") + QString::number(score));
     setDefaultTextColor(Qt::blue);
-    //setFont(QFont("times",16));
+    setFont(QFont("times",16));
     setPos(0, 30);
 }
 void Score::increase_score() {
     score++;
-    updateScoreText();
+
+    setPlainText(QString("Score: ")+QString::number(score));
 }
 int Score::getScore(){
-    return score;
+        return score;
 }
-void Score::updateScoreText(){
-    setPlainText(QString("Score: ")+ QString::number(score));
-}
+
 Score::~Score(){}

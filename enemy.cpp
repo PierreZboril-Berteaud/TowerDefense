@@ -1,15 +1,14 @@
 #include "enemy.h"
 
 Enemy::Enemy(){
-    QString path = QDir::currentPath();
     QDir::setCurrent(QCoreApplication::applicationDirPath());
-    QPixmap enemyPixmap(path + "/images/enemyNILS.jpg");
+    QPixmap enemyPixmap("images/enemy.png");
 
     width = enemyPixmap.width();
     height = enemyPixmap.height();
     setRect(0, 0, width, height);
-
-    PV =10;
+    setPen(Qt::NoPen);
+    PV =20;
     dead = false;
     damage = 10;
 
@@ -18,7 +17,7 @@ Enemy::Enemy(){
 
 
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
-    move_timer->start(50);
+    move_timer->start(100);
 
 }
 
@@ -124,6 +123,8 @@ void Enemy::inflict_damage(int damage) {
         if(get_pv()<=0){
             dead = true;
             qDebug() << "Enemy defeated!";
+            emit increase_score();
+
             remove_enemy();
         }
     }

@@ -1676,6 +1676,8 @@ CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.o: TowerDe
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
   TowerDefense_autogen/EWIEGA46WW/moc_health.cpp \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h \
+  TowerDefense_autogen/EWIEGA46WW/moc_score.cpp \
+  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h \
   TowerDefense_autogen/EWIEGA46WW/moc_tower.cpp \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h
 
@@ -4058,6 +4060,8 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.cpp:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.cpp:
+
+TowerDefense_autogen/EWIEGA46WW/moc_score.cpp:
 
 TowerDefense_autogen/EWIEGA46WW/moc_enemy.cpp:
 

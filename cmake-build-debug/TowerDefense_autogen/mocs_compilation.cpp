@@ -3,4 +3,5 @@
 #include "EWIEGA46WW/moc_MyScene.cpp"
 #include "EWIEGA46WW/moc_enemy.cpp"
 #include "EWIEGA46WW/moc_health.cpp"
+#include "EWIEGA46WW/moc_score.cpp"
 #include "EWIEGA46WW/moc_tower.cpp"
