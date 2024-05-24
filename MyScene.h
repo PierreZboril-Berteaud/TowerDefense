@@ -53,6 +53,7 @@ class MyScene : public QGraphicsScene{
         int enemiesSpawned;
         Health* health;
         Score* score;
+        Gold* gold;
 
 
     private slots:

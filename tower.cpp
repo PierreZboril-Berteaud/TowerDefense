@@ -15,6 +15,7 @@ Tower::Tower(){
 
     damage=10;
     attack_range = 250; // Définissez la portée de la tour
+    cost = 25;
     range_indicator = new QGraphicsEllipseItem(-attack_range, -attack_range, attack_range * 2, attack_range * 2, this);
     range_indicator->setPen(QPen(Qt::black)); // Rend la bordure de couleur noire
     range_indicator->setOpacity(0.3); // Opacité réduite pour l'indicateur de portée

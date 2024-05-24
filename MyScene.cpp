@@ -1,5 +1,4 @@
 #include "MyScene.h"
-#include "health.h"
 #include <QGraphicsScene>
 #include <QApplication>
 #include <QPixmap>
@@ -21,6 +20,9 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     health = new Health();
     addItem(health);
 
+    gold = new Gold();
+    addItem(gold);
+
     wave_count =1;
     nbEnemy = 5;
     enemiesSpawned =0;
@@ -40,6 +42,7 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
         towerPos.setX(towerPos.x() - 10);
         towerPos.setY(towerPos.y()-60);
         //Fais spawn une tour
+        
         Tower *tower = new Tower();
         tower->setPos(towerPos);
         if (tower->is_valid_place()) {
@@ -132,6 +135,11 @@ void MyScene::game_over(){
         delete waveTimer;
         waveTimer = nullptr;
         qDebug()<<"test wavetimer: ok!";
+    }
+    if(gold){
+        removeItem(gold);
+        delete gold;
+        gold = nullptr;
     }
 
 

@@ -19,6 +19,7 @@ class Tower :public QObject,public QGraphicsRectItem {
         Tower();
         bool is_valid_place();
         virtual ~Tower();
+        int get_cost(){return cost}
     public slots:
         void tower_fire();
     private:

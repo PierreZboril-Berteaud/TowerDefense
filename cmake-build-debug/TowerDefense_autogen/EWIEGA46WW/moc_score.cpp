@@ -95,5 +95,76 @@ int Score::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QGraphicsTextItem::qt_metacall(_c, _id, _a);
     return _id;
 }
+namespace {
+struct qt_meta_stringdata_Gold_t {
+    uint offsetsAndSizes[2];
+    char stringdata0[5];
+};
+#define QT_MOC_LITERAL(ofs, len) \
+    uint(sizeof(qt_meta_stringdata_Gold_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_Gold_t qt_meta_stringdata_Gold = {
+    {
+        QT_MOC_LITERAL(0, 4)   // "Gold"
+    },
+    "Gold"
+};
+#undef QT_MOC_LITERAL
+} // unnamed namespace
+
+Q_CONSTINIT static const uint qt_meta_data_Gold[] = {
+
+ // content:
+      10,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+Q_CONSTINIT const QMetaObject Gold::staticMetaObject = { {
+    QMetaObject::SuperData::link<QGraphicsTextItem::staticMetaObject>(),
+    qt_meta_stringdata_Gold.offsetsAndSizes,
+    qt_meta_data_Gold,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_Gold_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<Gold, std::true_type>
+    >,
+    nullptr
+} };
+
+void Gold::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    (void)_o;
+    (void)_id;
+    (void)_c;
+    (void)_a;
+}
+
+const QMetaObject *Gold::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *Gold::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_Gold.stringdata0))
+        return static_cast<void*>(this);
+    return QGraphicsTextItem::qt_metacast(_clname);
+}
+
+int Gold::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QGraphicsTextItem::qt_metacall(_c, _id, _a);
+    return _id;
+}
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

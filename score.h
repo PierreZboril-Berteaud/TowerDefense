@@ -15,7 +15,17 @@ public :
 
 private:
     int score;
-};
 
+};
+class Gold :public QGraphicsTextItem{
+    Q_OBJECT
+public:
+    Gold(QGraphicsItem* parent=nullptr);
+    ~Gold();
+    void increase_gold();
+    int getGold();
+private:
+    int gold;
+};
 
 #endif //TOWERDEFENSE_SCORE_H
