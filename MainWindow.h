@@ -34,6 +34,8 @@ public slots:
     void slot_playGame();
     void slot_showLeaderboard();
     void slot_exitGame();
+    void game_over();
+    void slot_showMainMenu();
 };
 
 

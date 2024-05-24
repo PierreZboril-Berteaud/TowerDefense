@@ -38,6 +38,9 @@ class MyScene : public QGraphicsScene{
         int get_wave() {return wave_count;}
         int set_wave(int wave) {this->wave_count = wave;}
 
+        signals:
+            void gameOver();
+
 
     private:
         QTimer* timer= nullptr;
@@ -47,12 +50,15 @@ class MyScene : public QGraphicsScene{
         int nbEnemy;
         int enemiesSpawned;
         Health* health;
+        Score* score;
 
 
     private slots:
         void spawnEnemy();
         void reachedEnd();
         void startNextWave();
+    public slots:
+        void game_over();
 
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere

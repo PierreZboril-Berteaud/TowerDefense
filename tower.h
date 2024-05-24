@@ -26,7 +26,7 @@ class Tower :public QObject,public QGraphicsRectItem {
     public slots:
         void tower_fire();
     private:
-        QTimer *attaque_timer;
+        QTimer *attack_timer;
         qreal attack_range; // Portée d'attaque de la tour en pixels
         QGraphicsEllipseItem *range_indicator; // Indicateur de portée d'attaque
         int cost;

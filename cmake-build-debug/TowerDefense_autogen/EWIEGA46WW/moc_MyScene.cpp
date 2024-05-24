@@ -26,28 +26,34 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MyScene_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[14];
     char stringdata0[8];
-    char stringdata1[11];
+    char stringdata1[9];
     char stringdata2[1];
     char stringdata3[11];
-    char stringdata4[14];
+    char stringdata4[11];
+    char stringdata5[14];
+    char stringdata6[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MyScene_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MyScene_t qt_meta_stringdata_MyScene = {
     {
         QT_MOC_LITERAL(0, 7),  // "MyScene"
-        QT_MOC_LITERAL(8, 10),  // "spawnEnemy"
-        QT_MOC_LITERAL(19, 0),  // ""
-        QT_MOC_LITERAL(20, 10),  // "reachedEnd"
-        QT_MOC_LITERAL(31, 13)   // "startNextWave"
+        QT_MOC_LITERAL(8, 8),  // "gameOver"
+        QT_MOC_LITERAL(17, 0),  // ""
+        QT_MOC_LITERAL(18, 10),  // "spawnEnemy"
+        QT_MOC_LITERAL(29, 10),  // "reachedEnd"
+        QT_MOC_LITERAL(40, 13),  // "startNextWave"
+        QT_MOC_LITERAL(54, 9)   // "game_over"
     },
     "MyScene",
-    "spawnEnemy",
+    "gameOver",
     "",
+    "spawnEnemy",
     "reachedEnd",
-    "startNextWave"
+    "startNextWave",
+    "game_over"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -58,19 +64,27 @@ Q_CONSTINIT static const uint qt_meta_data_MyScene[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   44,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x08,    1 /* Private */,
-       3,    0,   33,    2, 0x08,    2 /* Private */,
-       4,    0,   34,    2, 0x08,    3 /* Private */,
+       3,    0,   45,    2, 0x08,    2 /* Private */,
+       4,    0,   46,    2, 0x08,    3 /* Private */,
+       5,    0,   47,    2, 0x08,    4 /* Private */,
+       6,    0,   48,    2, 0x0a,    5 /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -87,11 +101,15 @@ Q_CONSTINIT const QMetaObject MyScene::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MyScene_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MyScene, std::true_type>,
+        // method 'gameOver'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'spawnEnemy'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'reachedEnd'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'startNextWave'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'game_over'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -103,10 +121,21 @@ void MyScene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         auto *_t = static_cast<MyScene *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->spawnEnemy(); break;
-        case 1: _t->reachedEnd(); break;
-        case 2: _t->startNextWave(); break;
+        case 0: _t->gameOver(); break;
+        case 1: _t->spawnEnemy(); break;
+        case 2: _t->reachedEnd(); break;
+        case 3: _t->startNextWave(); break;
+        case 4: _t->game_over(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (MyScene::*)();
+            if (_t _q_method = &MyScene::gameOver; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
         }
     }
     (void)_a;
@@ -131,15 +160,21 @@ int MyScene::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
+}
+
+// SIGNAL 0
+void MyScene::gameOver()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

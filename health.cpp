@@ -12,6 +12,7 @@ void Health::decrease_pv(){
     health = health - 10;
     if (health < 0) {
         health = 0;
+        emit gameOver();
     }
     setPlainText(QString("PV: ")+QString::number(health));
 }

@@ -15,7 +15,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 
 
     // Création de l'objet Score et ajout à la scène principale
-    Score* score = new Score();
+    score = new Score();
     addItem(score);
     // Création de l'objet Health et ajout à la scène principale
     health = new Health();
@@ -28,6 +28,8 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
     timer->start(2000);
+
+    connect(health, &Health::gameOver, this, &MyScene::game_over);
 
 }
 
@@ -60,7 +62,7 @@ void MyScene::spawnEnemy() {
         waveTimer = new QTimer(this);
         waveTimer->setSingleShot(true); //le timer ne s'execute qu'une fois
         connect(waveTimer, &QTimer::timeout, this, &MyScene::startNextWave);
-        waveTimer->start(30000);
+        waveTimer->start(3000);
     }
 }
 
@@ -104,6 +106,49 @@ void MyScene::zoomOut() {
     scaleFactor /= 1.1;
     // Applique le dézoom à la vue de la scène
     views().first()->scale(1 / 1.1, 1 / 1.1);
+}
+void MyScene::game_over(){
+    qDebug() << "Game Over";
+
+    if (timer) {
+        timer->stop();
+        delete timer;
+        timer = nullptr;
+        qDebug()<<"test time: ok!";
+    }
+
+    if (waveTimer) {
+        waveTimer->stop();
+        delete waveTimer;
+        waveTimer = nullptr;
+        qDebug()<<"test wavetimer: ok!";
+    }
+
+    if (score) {
+        removeItem(score);
+        delete score;
+        score = nullptr;
+        qDebug()<<"test score: ok!";
+    }
+
+    /*if (health) {
+        removeItem(health);
+        delete health;
+        health = nullptr;
+        qDebug()<<"test health: ok!";
+    }*/
+
+    if (mapPixmap) {
+        delete mapPixmap;
+        mapPixmap = nullptr;
+        qDebug()<<"Test pixmap : ok!";
+    }
+
+    //clear(); // Clear all items from the scene
+    qDebug()<<"test clear: ok!";
+
+
+    emit gameOver();
 }
 
 MyScene::~MyScene(){}

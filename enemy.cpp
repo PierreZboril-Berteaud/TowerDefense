@@ -5,7 +5,7 @@ Enemy::Enemy(){
     QDir::setCurrent(QCoreApplication::applicationDirPath());
     QPixmap enemyPixmap(path + "/images/1.png");
 
-    PV =100;
+    PV =10;
     dead = false;
     damage = 10;
 
@@ -108,5 +108,15 @@ void Enemy::set_pv(int PV){
 }
 
 void Enemy::inflict_damage(int damage) {
-    set_pv(PV - damage);
+    if(get_pv()>0) {
+        set_pv(PV - damage);
+    }
+    else{
+        if(get_pv()<=0){
+            set_pv(0);
+            dead = true;
+            qDebug() << "Enemy defeated!";
+            remove_enemy();
+        }
+    }
 }

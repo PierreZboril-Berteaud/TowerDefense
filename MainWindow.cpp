@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+#include "MyScene.h"
 #include <QMainWindow>
 #include <QPushButton>
 #include <QVBoxLayout>
@@ -7,10 +8,38 @@
 #include <QGraphicsView>
 #include <QTableWidget>
 #include <QTextStream>
-#include <QDir>
 #include <fstream>
 
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
+    QVBoxLayout *layout = new QVBoxLayout;
+    QWidget *centralWidget = new QWidget(this);
+    setCentralWidget(centralWidget);
+    centralWidget->setLayout(layout);
+
+    playButton = new QPushButton("Play");
+    connect(playButton, &QPushButton::clicked, this, &MainWindow::slot_playGame);
+    layout->addWidget(playButton);
+
+    leaderboardButton = new QPushButton("Leaderboard");
+    connect(leaderboardButton, &QPushButton::clicked, this, &MainWindow::slot_showLeaderboard);
+    layout->addWidget(leaderboardButton);
+
+    exitButton = new QPushButton("Exit");
+    connect(exitButton, &QPushButton::clicked, qApp, &QApplication::quit);
+    layout->addWidget(exitButton);
+
+    setFixedSize(1920, 1080);
+}
+void MainWindow::slot_showMainMenu() {
+    // Supprimer toute vue ou scène existante
+    if (mainView) {
+        mainView->setScene(nullptr);
+        delete mainView;
+        mainView = nullptr;
+    }
+
+    // Afficher les boutons du menu principal
     QVBoxLayout *layout = new QVBoxLayout;
     QWidget *centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
@@ -36,6 +65,7 @@ MainWindow::~MainWindow() {}
 void MainWindow::slot_playGame() {
     // Création de la scène du jeu
     this->mainScene = new MyScene;
+    connect(mainScene, &MyScene::gameOver, this, &MainWindow::game_over);
 
     // Création de la vue principale
     this->mainView = new QGraphicsView;
@@ -47,6 +77,7 @@ void MainWindow::slot_playGame() {
 
 
 }
+
 
 void MainWindow::slot_showLeaderboard() {
     // Cette fonction crée un tableau avec QTableWidget et qui affiche les informations (pseudo/score depuis un fichier txt)
@@ -77,6 +108,9 @@ void MainWindow::slot_showLeaderboard() {
     leaderboardTable->resizeColumnsToContents();
     leaderboardTable->setWindowTitle("Leaderboard");
     leaderboardTable->show();
+}
+void MainWindow::game_over() {
+    slot_showMainMenu();
 }
 
 void MainWindow::slot_exitGame() {}

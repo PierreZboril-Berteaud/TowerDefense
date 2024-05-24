@@ -1,3 +1,4 @@
+#include "enemy.h"
 #include "tower.h"
 
 
@@ -7,12 +8,15 @@ Tower::Tower(){
     QGraphicsRectItem* towerRect = new QGraphicsRectItem(-25, -30, 50, 60, this); // Position et taille du rectangle
     towerRect->setPen(QPen(Qt::red)); // Définit le contour en rouge
 
-    attack_range = 200;
+    attack_range = 500;
+    damage=10;
 
     // Crée un cercle pour indiquer la portée de l'attaque
     range_indicator = new QGraphicsEllipseItem(-attack_range, -attack_range, attack_range * 2, attack_range * 2, this);
-    range_indicator->setPen(QPen(Qt::black)); // Rend la bordure de couleur noire
-    range_indicator->setOpacity(0.3); // Opacité réduite pour l'indicateur de portée
+    range_indicator->setPen(QPen(Qt::NoPen)); // Pas de contour
+    range_indicator->setBrush(QColor(255, 0, 0, 50)); // Remplissage rouge avec une faible opacité
+
+
 
     // Crée un timer pour l'attaque de la tour
     QTimer* attack_timer = new QTimer(this);
@@ -21,7 +25,19 @@ Tower::Tower(){
 
 }
 void Tower::tower_fire(){
+    // Recherche tous les items dans la zone d'attaque de la tour
+    QList<QGraphicsItem*> colliding_items = range_indicator->collidingItems();
 
+    // Parcourt tous les items en collision
+    for (int i = 0; i < colliding_items.size(); ++i) {
+        qDebug()<<"boucle for : Ok!";
+        // Vérifie si l'item en collision est un ennemi
+        if (Enemy* enemy = dynamic_cast<Enemy*>(colliding_items[i])) {
+            qDebug()<<"if : Ok!";
+            // Inflige des dégâts à l'ennemi
+            enemy->inflict_damage(10);
+        }
+    }
 }
 bool Tower::is_valid_place(){
 
@@ -39,7 +55,7 @@ bool Tower::is_valid_place(){
 
 }
 Tower::~Tower() {
-    delete attaque_timer;
+    delete attack_timer;
     delete TowerPixmapItem;
 }
 
