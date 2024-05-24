@@ -57,6 +57,7 @@ void MyScene::spawnEnemy() {
         addItem(enemy);
         connect(enemy, &Enemy::reachedEnd, this, &MyScene::reachedEnd);
         enemiesSpawned++;
+        qDebug()<<enemy->pos();
     } else {
         timer->stop();
         waveTimer = new QTimer(this);
@@ -144,7 +145,6 @@ void MyScene::game_over(){
         qDebug()<<"Test pixmap : ok!";
     }
 
-    //clear(); // Clear all items from the scene
     qDebug()<<"test clear: ok!";
 
 

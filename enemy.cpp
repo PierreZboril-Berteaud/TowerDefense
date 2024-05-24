@@ -3,7 +3,11 @@
 Enemy::Enemy(){
     QString path = QDir::currentPath();
     QDir::setCurrent(QCoreApplication::applicationDirPath());
-    QPixmap enemyPixmap(path + "/images/1.png");
+    QPixmap enemyPixmap(path + "/images/enemyNILS.jpg");
+
+    width = enemyPixmap.width();
+    height = enemyPixmap.height();
+    setRect(0, 0, width, height);
 
     PV =10;
     dead = false;
@@ -18,8 +22,7 @@ Enemy::Enemy(){
 
 }
 
-Enemy::~Enemy() {
-}
+Enemy::~Enemy() {}
 
 void Enemy::move() {
     qreal newX = x();
@@ -65,8 +68,13 @@ void Enemy::move() {
         }
         // Met à jour la position de l'ennemi
         setPos(newX, newY);
+        //qDebug()<<this->pos();
+
 }
 
+QRectF Enemy::boundingRect() const {
+    return QRectF(0, 0, rect().width(), rect().height());
+}
 
 void Enemy::remove_enemy() {
     if (move_timer) {
@@ -103,17 +111,17 @@ void Enemy::set_pv(int PV){
         this->PV = PV;
     }
     else{
-        std::cout<<"Les PV doivent êtres supérieurs à 0";
+        this->PV = 0;
     }
 }
 
 void Enemy::inflict_damage(int damage) {
+    qDebug()<<"Enemy take damage";
     if(get_pv()>0) {
         set_pv(PV - damage);
     }
     else{
         if(get_pv()<=0){
-            set_pv(0);
             dead = true;
             qDebug() << "Enemy defeated!";
             remove_enemy();

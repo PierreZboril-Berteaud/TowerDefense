@@ -17,6 +17,8 @@ class Enemy: public QObject,public QGraphicsRectItem{
         int PV;
         bool dead;
         int damage;
+        qreal height;
+        qreal width;
 
         QTimer* move_timer =  new QTimer(this);
     signals:
@@ -41,6 +43,8 @@ class Enemy: public QObject,public QGraphicsRectItem{
 
         void inflict_damage(int damage);
         void remove_enemy();
+
+        QRectF boundingRect() const;
 
 
     private slots:

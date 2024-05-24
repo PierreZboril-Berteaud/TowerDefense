@@ -8,11 +8,12 @@ Health::Health(QGraphicsItem* parent): QGraphicsTextItem(parent){
     setFont(QFont("times",16));
 }
 void Health::decrease_pv(){
-    qDebug()<<"Health decreased : "<<health;
     health = health - 10;
+    qDebug()<<"Health decreased : "<<health;
     if (health < 0) {
         health = 0;
         emit gameOver();
+
     }
     setPlainText(QString("PV: ")+QString::number(health));
 }

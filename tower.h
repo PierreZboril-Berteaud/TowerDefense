@@ -31,6 +31,8 @@ class Tower :public QObject,public QGraphicsRectItem {
         QGraphicsEllipseItem *range_indicator; // Indicateur de portée d'attaque
         int cost;
         int damage;
+        qreal height;
+        qreal width;
 
 };
 

@@ -26,6 +26,7 @@ private :
 
 
 
+
 public:
     MainWindow(QWidget* parent = nullptr);
     virtual ~MainWindow();

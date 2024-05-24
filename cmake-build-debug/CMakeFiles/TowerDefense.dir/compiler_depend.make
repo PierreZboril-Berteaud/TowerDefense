@@ -4047,8 +4047,11 @@ CMakeFiles/TowerDefense.dir/tower.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cour
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItemGroup
 
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItemGroup:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp:
 
