@@ -9,6 +9,7 @@
 #include <QTableWidget>
 #include <QTextStream>
 #include <fstream>
+#include <QInputDialog>
 
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
@@ -63,6 +64,14 @@ void MainWindow::slot_showMainMenu() {
 MainWindow::~MainWindow() {}
 
 void MainWindow::slot_playGame() {
+    //demande un pseudo
+    bool ok;
+    playerName = QInputDialog::getText(this, tr("Entrez un pseudo"), tr("Pseudo:"), QLineEdit::Normal, "", &ok);
+
+    if (!ok || playerName.isEmpty()) {
+        QMessageBox::warning(this, tr("pas de nom"), tr("Vous devez entrer un nom."));
+        return;
+    }
     // Création de la scène du jeu
     this->mainScene = new MyScene;
     connect(mainScene, &MyScene::gameOver, this, &MainWindow::game_over);
@@ -82,55 +91,55 @@ void MainWindow::slot_playGame() {
 void MainWindow::slot_showLeaderboard() {
     // Cette fonction crée un tableau avec QTableWidget et qui affiche les informations (pseudo/score depuis un fichier txt)
     leaderboardTable = new QTableWidget;
-    leaderboardTable->setColumnCount(1); // Une seule colonne : score
+    leaderboardTable->setColumnCount(2); // Une seule colonne : score
 
     std::ifstream file("../Leaderboard.txt");
     if (!file.is_open()) {
-        QMessageBox::warning(this, "Error", "Could not open the leaderboard file."); // Affiche une erreur si le fichier est introuvable ou s'il n'est pas ouvert
+        QMessageBox::warning(this, "Erreur", "l'ouverture du fichier à échoué"); // Affiche une erreur si le fichier est introuvable ou s'il n'est pas ouvert
         return;
     }
 
     std::string line;
     int row = 0;
     while (std::getline(file, line)) {
-        std::string score;
+        std::string pseudo, score;
         std::istringstream iss(line);
-        if (std::getline(iss, score)) {
+        if (std::getline(iss, pseudo, ',') && std::getline(iss, score)) {
             leaderboardTable->insertRow(row);
-            leaderboardTable->setItem(row, 0, new QTableWidgetItem(QString::fromStdString(score))); // Utilisez la colonne 0 pour les scores
+            leaderboardTable->setItem(row, 0, new QTableWidgetItem(QString::fromStdString(pseudo))); // Utilisez la colonne 0 pour les pseudo
+            leaderboardTable->setItem(row, 1, new QTableWidgetItem(QString::fromStdString(score)));
             ++row;
         }
     }
 
     file.close();
 
-    leaderboardTable->setHorizontalHeaderLabels(QStringList() << "Score");
+    leaderboardTable->setHorizontalHeaderLabels(QStringList() << "Pseudo" << "Score");
     leaderboardTable->resizeColumnsToContents();
     leaderboardTable->setWindowTitle("Leaderboard");
     leaderboardTable->show();
 }
 void MainWindow::game_over() {
     if (mainScene) {
-        qDebug() << "mainScene is valid"; // Debugging output
+        qDebug() << "mainScene is valid";
 
-        // Attempt to get the current score
+
         int currentScore = mainScene->getCurrentScore();
 
-        qDebug() << "Current Score:";  // Debugging output
+        qDebug() << "Current Score:";
 
-        // Open the file in append mode using std::ofstream
-        std::ofstream file("../Leaderboard.txt", std::ios::app);
+
+        std::ofstream file("../Leaderboard.txt", std::ios::app); //Ouvre le fichier en mode lecture
         if (file.is_open()) {
-            qDebug() << "File opened successfully.";  // Debugging output
-            file << currentScore << "\n";
+            qDebug() << "Fichier ouvert";
+            file << playerName.toStdString() << "," << currentScore<<"\n";
             file.close();
-            qDebug() << "Score written to file and file closed"; // Debugging output
+
         } else {
-            qDebug() << "Failed to open the file";  // Debugging output
-            QMessageBox::warning(this, "Error", "Could not open the leaderboard file to save the score.");
+            qDebug() << "Ouverture du fichier échoué";
         }
     } else {
-        qDebug() << "mainScene is null";  // Debugging output
+        qDebug() << "pas de mainscene";  // Debugging output
     }
     slot_showMainMenu();
 }

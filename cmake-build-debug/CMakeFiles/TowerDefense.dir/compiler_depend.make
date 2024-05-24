@@ -573,7 +573,13 @@ CMakeFiles/TowerDefense.dir/MainWindow.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau
   /usr/include/c++/12/fstream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
-  /usr/include/c++/12/bits/fstream.tcc
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h
 
 CMakeFiles/TowerDefense.dir/MyScene.cpp.o: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp \
   /usr/include/stdc-predef.h \
@@ -4071,6 +4077,12 @@ TowerDefense_autogen/EWIEGA46WW/moc_MyScene.cpp:
 
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h:
+
 /usr/include/c++/12/bits/fstream.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
@@ -4348,6 +4360,8 @@ TowerDefense_autogen/mocs_compilation.cpp:
 /usr/include/c++/12/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h:
 
 /usr/include/c++/12/cwctype:
 
@@ -5067,7 +5081,11 @@ TowerDefense_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 

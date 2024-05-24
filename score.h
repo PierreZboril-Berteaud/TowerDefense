@@ -10,6 +10,7 @@ public :
     Score(QGraphicsItem* parent=nullptr);
     ~Score();
     void increase_score();
+
     int getScore() {return score;};
 
 
@@ -23,7 +24,9 @@ public:
     Gold(QGraphicsItem* parent=nullptr);
     ~Gold();
     void increase_gold();
+
     void decrease_gold(int cost);
+    void increase_gold(int add_gold);
     int get_gold(){return gold;};
     void set_gold(int gold) {this->gold = gold;};
 private:

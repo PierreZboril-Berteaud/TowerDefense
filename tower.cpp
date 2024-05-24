@@ -8,13 +8,13 @@ Tower::Tower(){
     QPixmap towerTexture("images/tower.png");
 
 
-    QGraphicsRectItem* towerRect = new QGraphicsRectItem(-25, -30, 50, 60, this); // Position et taille du rectangle
-    towerRect->setPen(QPen(Qt::transparent)); // Définit le contour en rouge
-    QGraphicsPixmapItem* towerTextureItem = new QGraphicsPixmapItem(towerTexture, towerRect);
-    towerTextureItem->setOffset(-25, -30); // Positionner la texture sur le rectangle
+    QGraphicsRectItem* tower_rect = new QGraphicsRectItem(-25, -30, 50, 60, this); // Position et taille du rectangle
+    tower_rect->setPen(QPen(Qt::transparent)); // Définit le contour en rouge
+    QGraphicsPixmapItem* tower_texture_item = new QGraphicsPixmapItem(towerTexture, tower_rect);
+    tower_texture_item->setOffset(-25, -30); // Positionner la texture sur le rectangle
 
     damage=10;
-    attack_range = 250; // Définissez la portée de la tour
+    attack_range = 250; // portée de la tour
     cost = 25;
     range_indicator = new QGraphicsEllipseItem(-attack_range, -attack_range, attack_range * 2, attack_range * 2, this);
     range_indicator->setPen(QPen(Qt::black)); // Rend la bordure de couleur noire
@@ -24,7 +24,7 @@ Tower::Tower(){
     // Crée un timer pour l'attaque de la tour
     QTimer* attack_timer = new QTimer(this);
     connect(attack_timer, &QTimer::timeout, this, &Tower::tower_fire);
-    attack_timer->start(2500); // Démarre le timer avec une intervalle de 1000 ms (1 seconde)
+    attack_timer->start(2500); // Démarre le timer avec une intervalle de 1s
 
 }
 void Tower::tower_fire(){
@@ -38,6 +38,7 @@ void Tower::tower_fire(){
         if (Enemy* enemy = dynamic_cast<Enemy*>(colliding_items[i])) {
             // Inflige des dégâts à l'ennemi
             enemy->inflict_damage(10);
+            break;
         }
     }
 }

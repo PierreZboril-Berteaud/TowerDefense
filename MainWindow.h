@@ -23,6 +23,7 @@ private :
     QPushButton* leaderboardButton=nullptr;
     QPushButton* exitButton=nullptr;
     QTableWidget *leaderboardTable=nullptr;
+    QString playerName;
 
 
 

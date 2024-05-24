@@ -24,6 +24,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
     signals:
         void reachedEnd();
         void increase_score();
+        void add_gold();
     public:
 
         QGraphicsPixmapItem *enemyPixmapItem;
@@ -50,6 +51,7 @@ class Enemy: public QObject,public QGraphicsRectItem{
 
     private slots:
         void move();
+
 
 };
 

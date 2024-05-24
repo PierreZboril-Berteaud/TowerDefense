@@ -39,6 +39,8 @@ class MyScene : public QGraphicsScene{
         void set_wave(int wave) {this->wave_count = wave;}
         int getCurrentScore() const;
 
+        void add_gold();
+
         signals:
             void gameOver();
 
@@ -46,13 +48,15 @@ class MyScene : public QGraphicsScene{
     private:
         QTimer* timer= nullptr;
         QTimer* waveTimer=nullptr;
-        qreal scaleFactor;  // Facteur d'échelle pour le zoom
+        qreal scale_factor;  // Facteur d'échelle pour le zoom
         int wave_count;
         int nbEnemy;
         int enemiesSpawned;
         Health* health;
         Score* score;
         Gold* gold;
+
+        int gold_added = 10;
 
 
     private slots:

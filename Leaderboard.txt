@@ -1,4 +1,6 @@
-9990
-10
-10
-
+Player1,999
+ef,ergjer,0
+ef,ergjer,0
+ef,ergjer,0
+ef,ergjer,0
+ef,ergjer,0

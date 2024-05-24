@@ -9,14 +9,14 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     setSceneRect(0,0,1820,980);
     mapPixmap = new QPixmap("images/mapFinale.png");
     QGraphicsPixmapItem* pixmapItem = addPixmap(*mapPixmap);
-    // Définit la position de la pixmap sur la scène
+
     pixmapItem->setPos(0, 0);
 
 
-    // Création de l'objet Score et ajout à la scène principale
+
     score = new Score();
     addItem(score);
-    // Création de l'objet Health et ajout à la scène principale
+
     health = new Health();
     addItem(health);
 
@@ -29,7 +29,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 
     timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
-    timer->start(2000);
+    timer->start(1000);
 
     connect(health, &Health::gameOver, this, &MyScene::game_over);
 
@@ -38,8 +38,8 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
-        QPointF towerPos = event->scenePos(); //Centre l'image par rapport au curseur de la souris
-        towerPos.setX(towerPos.x() - 10);
+        QPointF towerPos = event->scenePos();
+        towerPos.setX(towerPos.x() - 10);//Centre l'image par rapport au curseur de la souris
         towerPos.setY(towerPos.y() - 60);
         //Fais spawn une tour
         Tower *tower = new Tower();
@@ -48,10 +48,8 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
             if (tower->is_valid_place()) {
                 addItem(tower);
                 gold->decrease_gold(tower->get_cost());
-                //gold->set_gold(gold->get_gold() - tower->get_cost());
 
                 qDebug()<<"Il vous reste:"<<gold->get_gold()<<"Gold";
-                qDebug()<<"Le prix de la tour est:"<<tower->get_cost();
             }
         } else {
             qDebug() << "Pas assez d'argent";
@@ -66,6 +64,7 @@ void MyScene::spawnEnemy() {
         addItem(enemy);
         connect(enemy, &Enemy::reachedEnd, this, &MyScene::reachedEnd);
         connect(enemy, &Enemy::increase_score, score, &Score::increase_score);
+        connect(enemy, &Enemy::add_gold, this, &MyScene::add_gold);
         enemiesSpawned++;
         qDebug()<<enemy->pos();
     } else {
@@ -96,7 +95,11 @@ void MyScene::increase_score(){
         score->increase_score();
     }
 }
-
+void MyScene::add_gold(){
+    if(gold){
+        gold->increase_gold(gold_added);
+    }
+}
 
 void MyScene::keyPressEvent(QKeyEvent* event) {
     switch (event->key()) {
@@ -113,16 +116,12 @@ void MyScene::keyPressEvent(QKeyEvent* event) {
 
 
 void MyScene::zoomIn() {
-    // Augmente le facteur d'échelle
-    scaleFactor *= 1.1;
-    // Applique le zoom à la vue de la scène
+    scale_factor *= 1.1;
     views().first()->scale(1.1, 1.1);
 }
 
 void MyScene::zoomOut() {
-    // Diminue le facteur d'échelle
-    scaleFactor /= 1.1;
-    // Applique le dézoom à la vue de la scène
+    scale_factor /= 1.1;
     views().first()->scale(1 / 1.1, 1 / 1.1);
 }
 void MyScene::game_over(){
@@ -148,12 +147,6 @@ void MyScene::game_over(){
     }
 
 
-    /*if (health) {
-        removeItem(health);
-        delete health;
-        health = nullptr;
-        qDebug()<<"test health: ok!";
-    }*/
 
     if (mapPixmap) {
         delete mapPixmap;

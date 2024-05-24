@@ -8,7 +8,7 @@ Enemy::Enemy(){
     height = enemyPixmap.height();
     setRect(0, 0, width, height);
     setPen(Qt::NoPen);
-    PV =20;
+    PV =40;
     dead = false;
     damage = 10;
 
@@ -17,7 +17,7 @@ Enemy::Enemy(){
 
 
     connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
-    move_timer->start(100);
+    move_timer->start(50);
 
 }
 
@@ -61,6 +61,7 @@ void Enemy::move() {
         else {
             qDebug() << "Enemy reached the end";
             emit reachedEnd();
+
 
             remove_enemy();
             return;
@@ -124,6 +125,7 @@ void Enemy::inflict_damage(int damage) {
             dead = true;
             qDebug() << "Enemy defeated!";
             emit increase_score();
+            emit add_gold();
 
             remove_enemy();
         }

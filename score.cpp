@@ -26,6 +26,10 @@ void Score::increase_score() {
 
     setPlainText(QString("Score: ")+QString::number(score));
 }
+void Gold::increase_gold(int add_gold){
+    set_gold(get_gold()+add_gold);
+    setPlainText(QString("Gold: ")+QString::number(get_gold()));
+}
 void Gold::decrease_gold(int cost){
     set_gold(get_gold() - cost);
     setPlainText(QString("Score: ")+QString::number(get_gold()));
