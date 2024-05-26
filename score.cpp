@@ -9,10 +9,6 @@ Score::Score(QGraphicsItem* parent): QGraphicsTextItem(parent){
     setFont(QFont("times",16));
     setPos(0, 30);
 
-    /*setPlainText(QString("Gold: ") + QString::number(gold));
-    setDefaultTextColor(Qt::yellow);
-    setFont(QFont("times",16));
-    setPos(0, 60);*/
 }
 Gold::Gold(QGraphicsItem* parent){
     gold = 100;

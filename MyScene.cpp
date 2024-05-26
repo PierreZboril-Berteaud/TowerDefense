@@ -7,7 +7,7 @@
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
-    mapPixmap = new QPixmap("images/mapFinale.png");
+    mapPixmap = new QPixmap("images/map_finale_texture.png");
     QGraphicsPixmapItem* pixmapItem = addPixmap(*mapPixmap);
 
     pixmapItem->setPos(0, 0);

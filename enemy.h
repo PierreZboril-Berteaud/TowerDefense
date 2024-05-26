@@ -8,7 +8,6 @@
 #include <QGraphicsScene>
 #include <iostream>
 #include <QPixmap>
-#include <QDir>
 #include <QCoreApplication>
 
 class Enemy: public QObject,public QGraphicsRectItem{

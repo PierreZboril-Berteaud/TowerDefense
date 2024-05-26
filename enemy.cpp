@@ -1,7 +1,6 @@
 #include "enemy.h"
 
 Enemy::Enemy(){
-    QDir::setCurrent(QCoreApplication::applicationDirPath());
     QPixmap enemyPixmap("images/enemy.png");
 
     width = enemyPixmap.width();
