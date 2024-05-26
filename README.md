@@ -24,6 +24,9 @@ Les tours attaquent toutes les 2 secondes (10 de degats) et les ennemis ont 30PV
 
 La partie se finit une fois que la vie du joueur atteint 0  
 
+Pour Zoomer, utilisez les touches Z et S  
+Pour vous déplacer après avoir zoomer utilisez les flèches directionnelles  
+
 ------------------------------------
 
 ------IMPORTANT------
