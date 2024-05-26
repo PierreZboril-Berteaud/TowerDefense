@@ -12,7 +12,7 @@ Score::Score(QGraphicsItem* parent): QGraphicsTextItem(parent){
 }
 Gold::Gold(QGraphicsItem* parent){
     gold = 100;
-    setPlainText(QString("Gold: ") + QString::number(gold));
+    setPlainText(QString("Or: ") + QString::number(gold));
     setDefaultTextColor(Qt::yellow);
     setFont(QFont("times",16));
     setPos(0, 60);
@@ -24,7 +24,7 @@ void Score::increase_score() {
 }
 void Gold::increase_gold(int add_gold){
     set_gold(get_gold()+add_gold);
-    setPlainText(QString("Gold: ")+QString::number(get_gold()));
+    setPlainText(QString("Or: ")+QString::number(get_gold()));
 }
 void Gold::decrease_gold(int cost){
     set_gold(get_gold() - cost);

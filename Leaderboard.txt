@@ -1,6 +1,1 @@
 Player1,999
-ef,ergjer,0
-ef,ergjer,0
-ef,ergjer,0
-ef,ergjer,0
-ef,ergjer,0

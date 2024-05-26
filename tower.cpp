@@ -24,7 +24,7 @@ Tower::Tower(){
     // Crée un timer pour l'attaque de la tour
     QTimer* attack_timer = new QTimer(this);
     connect(attack_timer, &QTimer::timeout, this, &Tower::tower_fire);
-    attack_timer->start(2500); // Démarre le timer avec une intervalle de 1s
+    attack_timer->start(2000); // Démarre le timer avec une intervalle de 1s
 
 }
 void Tower::tower_fire(){

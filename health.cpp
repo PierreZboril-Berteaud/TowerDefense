@@ -3,7 +3,7 @@
 #include <iostream>
 Health::Health(QGraphicsItem* parent): QGraphicsTextItem(parent){
     health=100;
-    setPlainText(QString("PV: ") + QString::number(health));
+    setPlainText(QString("Vie: ") + QString::number(health));
     setDefaultTextColor(Qt::red);
     setFont(QFont("times",16));
 }
@@ -15,6 +15,6 @@ void Health::decrease_pv(){
         emit gameOver();
 
     }
-    setPlainText(QString("PV: ")+QString::number(health));
+    setPlainText(QString("Vie: ")+QString::number(health));
 }
 Health::~Health(){}
