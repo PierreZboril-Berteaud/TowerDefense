@@ -28,7 +28,7 @@ void Gold::increase_gold(int add_gold){
 }
 void Gold::decrease_gold(int cost){
     set_gold(get_gold() - cost);
-    setPlainText(QString("Score: ")+QString::number(get_gold()));
+    setPlainText(QString("Or: ")+QString::number(get_gold()));
 }
 Score::~Score(){}
 Gold::~Gold(){}
