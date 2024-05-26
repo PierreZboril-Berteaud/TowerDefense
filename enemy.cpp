@@ -7,7 +7,7 @@ Enemy::Enemy(){
     height = enemyPixmap.height();
     setRect(0, 0, width, height);
     setPen(Qt::NoPen);
-    PV =40;
+    PV =30;
     dead = false;
     damage = 10;
 
