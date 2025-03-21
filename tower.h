@@ -1,6 +1,7 @@
 #ifndef TOWER_H
 #define TOWER_H
 
+#include "projectile.h"
 #include <QGraphicsRectItem>
 #include <QObject>
 #include <QTimer>
@@ -12,24 +13,37 @@
 #include <QCoreApplication>
 #include <QDebug>
 
+
 class Tower :public QObject,public QGraphicsRectItem {
     Q_OBJECT
     public:
         QGraphicsPixmapItem *TowerPixmapItem;
-        Tower();
-        bool is_valid_place();
+        Tower(qreal x,qreal y,int towerType);
+        bool isValidPlace();
         virtual ~Tower();
-        int get_cost(){return cost;}
+        int getCost(){return cost;}
+
+        qreal towerGetX() {return x;};
+        qreal towerGetY() {return y;};
+        void deleteTower();
     public slots:
-        void tower_fire();
+        void towerFire();
     private:
-        QTimer *attack_timer;
-        qreal attack_range; // Portée d'attaque de la tour en pixels
-        QGraphicsEllipseItem *range_indicator; // Indicateur de portée d'attaque
+        QTimer *attackTimer;
+        qreal attackRange; // Portée d'attaque de la tour en pixels
+        QGraphicsEllipseItem *rangeIndicator; // Indicateur de portée d'attaque
+        QGraphicsRectItem* towerRect;
+        QGraphicsPixmapItem* towerTextureItem;
         int cost;
         int damage;
+
+
         qreal height;
         qreal width;
+
+
+        qreal x;
+        qreal y;
 
 };
 

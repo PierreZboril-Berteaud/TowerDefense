@@ -19,32 +19,31 @@ class Enemy: public QObject,public QGraphicsRectItem{
         qreal height;
         qreal width;
 
-        QTimer* move_timer =  new QTimer(this);
+        QGraphicsPixmapItem *enemyPixmapItem;
+        QTimer* moveTimer =  new QTimer(this);
     signals:
-        void reachedEnd();
-        void increase_score();
-        void add_gold();
+        void reachedEnd(int damage);
+        void increaseScore();
+        void addGold();
     public:
 
-        QGraphicsPixmapItem *enemyPixmapItem;
-        Enemy();
+
+        Enemy(int enemyType);
         ~Enemy();
         //Getters
-        bool is_dead();
-        int get_pv();
-        int get_damage();
-        int get_spawnX();
-        int get_spawnY();
+        int getPv() {return PV;};
+        int getDamage() {return damage;};
 
         //setters
-        void set_dead(bool dead);
-        void set_damage(int damage);
-        void set_pv(int PV);
+        void setDead(bool dead) { this->dead = dead;};
+        void setDamage(int damage) {this->damage = damage;};
+        void setPv(int PV) {this->PV = PV;};
 
 
-        void inflict_damage(int damage);
-        void remove_enemy();
+        void inflictDamage(int damage);
 
+        void removeEnemy();
+        void deleteEnemys();
         QRectF boundingRect() const;
 
 

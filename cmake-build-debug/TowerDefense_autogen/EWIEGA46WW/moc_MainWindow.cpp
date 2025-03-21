@@ -8,6 +8,7 @@
 
 #include <memory>
 #include "../../../MainWindow.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'MainWindow.h' doesn't include <QObject>."
@@ -28,32 +29,32 @@ namespace {
 struct qt_meta_stringdata_MainWindow_t {
     uint offsetsAndSizes[14];
     char stringdata0[11];
-    char stringdata1[14];
+    char stringdata1[13];
     char stringdata2[1];
-    char stringdata3[21];
-    char stringdata4[14];
+    char stringdata3[20];
+    char stringdata4[13];
     char stringdata5[10];
-    char stringdata6[18];
+    char stringdata6[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 13),  // "slot_playGame"
-        QT_MOC_LITERAL(25, 0),  // ""
-        QT_MOC_LITERAL(26, 20),  // "slot_showLeaderboard"
-        QT_MOC_LITERAL(47, 13),  // "slot_exitGame"
-        QT_MOC_LITERAL(61, 9),  // "game_over"
-        QT_MOC_LITERAL(71, 17)   // "slot_showMainMenu"
+        QT_MOC_LITERAL(11, 12),  // "slotPlayGame"
+        QT_MOC_LITERAL(24, 0),  // ""
+        QT_MOC_LITERAL(25, 19),  // "slotShowLeaderboard"
+        QT_MOC_LITERAL(45, 12),  // "slotExitGame"
+        QT_MOC_LITERAL(58, 9),  // "gameOverF"
+        QT_MOC_LITERAL(68, 16)   // "slotShowMainMenu"
     },
     "MainWindow",
-    "slot_playGame",
+    "slotPlayGame",
     "",
-    "slot_showLeaderboard",
-    "slot_exitGame",
-    "game_over",
-    "slot_showMainMenu"
+    "slotShowLeaderboard",
+    "slotExitGame",
+    "gameOverF",
+    "slotShowMainMenu"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -97,15 +98,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'slot_playGame'
+        // method 'slotPlayGame'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'slot_showLeaderboard'
+        // method 'slotShowLeaderboard'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'slot_exitGame'
+        // method 'slotExitGame'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'game_over'
+        // method 'gameOverF'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'slot_showMainMenu'
+        // method 'slotShowMainMenu'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -117,11 +118,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->slot_playGame(); break;
-        case 1: _t->slot_showLeaderboard(); break;
-        case 2: _t->slot_exitGame(); break;
-        case 3: _t->game_over(); break;
-        case 4: _t->slot_showMainMenu(); break;
+        case 0: _t->slotPlayGame(); break;
+        case 1: _t->slotShowLeaderboard(); break;
+        case 2: _t->slotExitGame(); break;
+        case 3: _t->gameOverF(); break;
+        case 4: _t->slotShowMainMenu(); break;
         default: ;
         }
     }

@@ -10,6 +10,12 @@
 #include <QMessageBox>
 #include <QTableWidget>
 #include <QTableWidgetItem>
+#include <pqxx/pqxx>
+#include <QApplication>
+#include <QGraphicsView>
+#include <QTextStream>
+#include <QInputDialog>
+
 
 #include "MyScene.h"
 
@@ -24,20 +30,20 @@ private :
     QPushButton* exitButton=nullptr;
     QTableWidget *leaderboardTable=nullptr;
     QString playerName;
-
-
-
+    QVBoxLayout *layout=nullptr;
+    QWidget *centralWidget=nullptr;
 
 public:
     MainWindow(QWidget* parent = nullptr);
     virtual ~MainWindow();
+    void deleteAll();
 
 public slots:
-    void slot_playGame();
-    void slot_showLeaderboard();
-    void slot_exitGame();
-    void game_over();
-    void slot_showMainMenu();
+    void slotPlayGame();
+    void slotShowLeaderboard();
+    void slotExitGame();
+    void gameOverF();
+    void slotShowMainMenu();
 };
 
 

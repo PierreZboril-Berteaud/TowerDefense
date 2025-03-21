@@ -1,5 +1,7 @@
 /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/EWIEGA46WW/moc_tower.cpp: /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
   /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/moc_predefs.h \
+  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
+  /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/projectile.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -45,6 +47,7 @@
   /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/bits/iterator_concepts.h \
   /usr/include/c++/12/bits/list.tcc \
   /usr/include/c++/12/bits/locale_classes.h \
@@ -148,6 +151,8 @@
   /usr/include/c++/12/iomanip \
   /usr/include/c++/12/ios \
   /usr/include/c++/12/iosfwd \
+  /usr/include/c++/12/iostream \
+  /usr/include/c++/12/istream \
   /usr/include/c++/12/iterator \
   /usr/include/c++/12/limits \
   /usr/include/c++/12/list \
@@ -303,6 +308,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
@@ -405,6 +411,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QVector2D \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
@@ -426,6 +433,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \

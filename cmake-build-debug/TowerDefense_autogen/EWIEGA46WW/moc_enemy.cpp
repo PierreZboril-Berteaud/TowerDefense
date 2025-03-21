@@ -26,13 +26,14 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_Enemy_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[14];
     char stringdata0[6];
     char stringdata1[11];
     char stringdata2[1];
-    char stringdata3[15];
-    char stringdata4[9];
-    char stringdata5[5];
+    char stringdata3[7];
+    char stringdata4[14];
+    char stringdata5[8];
+    char stringdata6[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_Enemy_t::offsetsAndSizes) + ofs), len 
@@ -41,15 +42,17 @@ Q_CONSTINIT static const qt_meta_stringdata_Enemy_t qt_meta_stringdata_Enemy = {
         QT_MOC_LITERAL(0, 5),  // "Enemy"
         QT_MOC_LITERAL(6, 10),  // "reachedEnd"
         QT_MOC_LITERAL(17, 0),  // ""
-        QT_MOC_LITERAL(18, 14),  // "increase_score"
-        QT_MOC_LITERAL(33, 8),  // "add_gold"
-        QT_MOC_LITERAL(42, 4)   // "move"
+        QT_MOC_LITERAL(18, 6),  // "damage"
+        QT_MOC_LITERAL(25, 13),  // "increaseScore"
+        QT_MOC_LITERAL(39, 7),  // "addGold"
+        QT_MOC_LITERAL(47, 4)   // "move"
     },
     "Enemy",
     "reachedEnd",
     "",
-    "increase_score",
-    "add_gold",
+    "damage",
+    "increaseScore",
+    "addGold",
     "move"
 };
 #undef QT_MOC_LITERAL
@@ -69,15 +72,15 @@ Q_CONSTINIT static const uint qt_meta_data_Enemy[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    1 /* Public */,
-       3,    0,   39,    2, 0x06,    2 /* Public */,
-       4,    0,   40,    2, 0x06,    3 /* Public */,
+       1,    1,   38,    2, 0x06,    1 /* Public */,
+       4,    0,   41,    2, 0x06,    3 /* Public */,
+       5,    0,   42,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   41,    2, 0x08,    4 /* Private */,
+       6,    0,   43,    2, 0x08,    5 /* Private */,
 
  // signals: parameters
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -98,9 +101,10 @@ Q_CONSTINIT const QMetaObject Enemy::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<Enemy, std::true_type>,
         // method 'reachedEnd'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'increase_score'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'increaseScore'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'add_gold'
+        // method 'addGold'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'move'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
@@ -114,16 +118,16 @@ void Enemy::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         auto *_t = static_cast<Enemy *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->reachedEnd(); break;
-        case 1: _t->increase_score(); break;
-        case 2: _t->add_gold(); break;
+        case 0: _t->reachedEnd((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->increaseScore(); break;
+        case 2: _t->addGold(); break;
         case 3: _t->move(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Enemy::*)();
+            using _t = void (Enemy::*)(int );
             if (_t _q_method = &Enemy::reachedEnd; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
@@ -131,20 +135,19 @@ void Enemy::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         }
         {
             using _t = void (Enemy::*)();
-            if (_t _q_method = &Enemy::increase_score; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &Enemy::increaseScore; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (Enemy::*)();
-            if (_t _q_method = &Enemy::add_gold; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &Enemy::addGold; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *Enemy::metaObject() const
@@ -180,19 +183,20 @@ int Enemy::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Enemy::reachedEnd()
+void Enemy::reachedEnd(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void Enemy::increase_score()
+void Enemy::increaseScore()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
-void Enemy::add_gold()
+void Enemy::addGold()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }

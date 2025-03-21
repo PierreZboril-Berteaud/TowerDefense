@@ -12,7 +12,13 @@
 #include <QGraphicsScene>
 #include <QGraphicsRectItem>
 #include <QGraphicsSceneMouseEvent>
-
+#include <QGraphicsScene>
+#include <QApplication>
+#include <QPixmap>
+#include <QScrollBar>
+#include <cstdlib>
+#include <QMenu>
+#include <QAction>
 
 #include "tower.h"
 #include "enemy.h"
@@ -22,55 +28,63 @@
 class MyScene : public QGraphicsScene{
     Q_OBJECT
 
-    public:
-        MyScene(QObject* parent = nullptr);
 
-
-        void keyPressEvent(QKeyEvent * event);
-        //void deleteEnemy()
-        virtual ~MyScene();
-
-        void zoomIn();
-        void zoomOut();
-
-        int get_nbEnemy() {return nbEnemy;}
-        void set_nbEnemy(int nbEnemy) {this->nbEnemy = nbEnemy;}
-        int get_wave() {return wave_count;}
-        void set_wave(int wave) {this->wave_count = wave;}
-        int getCurrentScore() const;
-
-        void add_gold();
-
-        signals:
-            void gameOver();
 
 
     private:
         QTimer* timer= nullptr;
         QTimer* waveTimer=nullptr;
+        Health* health= nullptr;
+        Score* score=nullptr;
+        Gold* gold=nullptr;
+
+
+        std::vector<Tower*> towerList;
+        std::vector<Enemy*> enemyList;
         qreal scale_factor;  // Facteur d'échelle pour le zoom
-        int wave_count;
+        int waveCount;
         int nbEnemy;
         int enemiesSpawned;
-        Health* health;
-        Score* score;
-        Gold* gold;
-
-        int gold_added = 10;
-
+        int goldAdded = 10;
 
     private slots:
         void spawnEnemy();
-        void reachedEnd();
+        void reachedEnd(int damage);
         void startNextWave();
-        void increase_score();
-    public slots:
-        void game_over();
+        void increaseScore();
 
     protected:
         void mousePressEvent(QGraphicsSceneMouseEvent *event) override; //Override set à redefinir une fonction d'une classe mere
 
         QPixmap* mapPixmap;
+
+    public slots:
+        void gameOverF();
+
+    public:
+        MyScene(QObject* parent = nullptr);
+
+        void deleteTowers();
+        void deleteEnemy();
+
+        void keyPressEvent(QKeyEvent * event);
+
+        virtual ~MyScene();
+
+        void zoomIn();
+        void zoomOut();
+
+        int getNbEnemy() {return nbEnemy;}
+        void setNbEnemy(int nbEnemy) {this->nbEnemy = nbEnemy;}
+        int getWave() {return waveCount;}
+        void setWave(int wave) {this->waveCount = wave;}
+        int getCurrentScore() const;
+
+        void addGold();
+
+
+    signals:
+        void gameOver();
 
 
 };

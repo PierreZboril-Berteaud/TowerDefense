@@ -10,9 +10,9 @@ class Health:public QGraphicsTextItem {
 public:
     Health(QGraphicsItem* parent=nullptr);
     ~Health();
-    void decrease_pv();
-    int get_health() {return health;}
-    void set_health(int pv);
+    void decreasePv(int damage);
+    int getHealth() {return health;}
+    void setHealth(int pv);
 signals:
     void gameOver();
 private:

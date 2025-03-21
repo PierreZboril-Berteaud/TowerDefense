@@ -17,18 +17,18 @@ Gold::Gold(QGraphicsItem* parent){
     setFont(QFont("times",16));
     setPos(0, 60);
 }
-void Score::increase_score() {
+void Score::increaseScore() {
     score++;
 
     setPlainText(QString("Score: ")+QString::number(score));
 }
-void Gold::increase_gold(int add_gold){
-    set_gold(get_gold()+add_gold);
-    setPlainText(QString("Or: ")+QString::number(get_gold()));
+void Gold::increaseGold(int addGold){
+    setGold(getGold()+addGold);
+    setPlainText(QString("Or: ")+QString::number(getGold()));
 }
-void Gold::decrease_gold(int cost){
-    set_gold(get_gold() - cost);
-    setPlainText(QString("Or: ")+QString::number(get_gold()));
+void Gold::decreaseGold(int cost){
+    setGold(getGold() - cost);
+    setPlainText(QString("Or: ")+QString::number(getGold()));
 }
 Score::~Score(){}
 Gold::~Gold(){}

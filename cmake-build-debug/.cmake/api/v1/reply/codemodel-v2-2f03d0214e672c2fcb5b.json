@@ -41,7 +41,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TowerDefense::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TowerDefense-Debug-bc1e76b247cb3520664b.json",
+					"jsonFile" : "target-TowerDefense-Debug-56d51ec5fed4bd418ec1.json",
 					"name" : "TowerDefense",
 					"projectIndex" : 0
 				},
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
-		"source" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense"
+		"build" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
+		"source" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense"
 	},
 	"version" : 
 	{

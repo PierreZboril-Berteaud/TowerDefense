@@ -1,26 +1,48 @@
 #include "enemy.h"
 
-Enemy::Enemy(){
-    QPixmap enemyPixmap("images/enemy.png");
+Enemy::Enemy(int enemyType){
+    if(enemyType==1) {
+        QPixmap enemyPixmap("images/enemy.png");
 
-    width = enemyPixmap.width();
-    height = enemyPixmap.height();
-    setRect(0, 0, width, height);
-    setPen(Qt::NoPen);
-    PV =30;
-    dead = false;
-    damage = 10;
+        width = enemyPixmap.width();
+        height = enemyPixmap.height();
+        setRect(0, 0, width, height);
+        setPen(Qt::NoPen);
+        setPv(30);
+        setDead(false);
+        setDamage(10);
 
-    enemyPixmapItem = new QGraphicsPixmapItem(enemyPixmap, this);
+        enemyPixmapItem = new QGraphicsPixmapItem(enemyPixmap, this);
 
+        connect(moveTimer, SIGNAL(timeout()), this, SLOT(move()));
+        moveTimer->start(120);
 
+        setPos(0, 460);
 
-    connect(move_timer, SIGNAL(timeout()), this, SLOT(move()));
-    move_timer->start(120);
+    }
+    if(enemyType==2){
+        QPixmap enemyPixmap("images/enemy_type_2.png");
+        width = enemyPixmap.width();
+        height = enemyPixmap.height();
+        setRect(0, 0, width, height);
+        setPen(Qt::NoPen);
+        setPv(50);
+        setDead(false);
+        setDamage(100);
+
+        enemyPixmapItem = new QGraphicsPixmapItem(enemyPixmap, this);
+
+        connect(moveTimer, SIGNAL(timeout()), this, SLOT(move()));
+        moveTimer->start(150);
+
+        setPos(0, 460);
+
+    }
+
 
 }
 
-Enemy::~Enemy() {}
+
 
 void Enemy::move() {
     qreal newX = x();
@@ -58,16 +80,12 @@ void Enemy::move() {
         }
             // Arrête le déplacement lorsque l'ennemi atteint la destination
         else {
-            qDebug() << "Enemy reached the end";
-            emit reachedEnd();
-
-
-            remove_enemy();
+            emit reachedEnd(getDamage());
+            removeEnemy();
             return;
         }
         // Met à jour la position de l'ennemi
         setPos(newX, newY);
-        //qDebug()<<this->pos();
 
 }
 
@@ -75,58 +93,42 @@ QRectF Enemy::boundingRect() const {
     return QRectF(0, 0, rect().width(), rect().height());
 }
 
-void Enemy::remove_enemy() {
-    if (move_timer) {
-        move_timer->stop();
-        delete move_timer;
-        move_timer = nullptr;
+void Enemy::removeEnemy() {
+    if (moveTimer) {
+        moveTimer->stop();
+        moveTimer = nullptr;
+        delete moveTimer;
+
     }
     scene()->removeItem(this);
-    delete this;
+}
+void Enemy::deleteEnemys(){
+        if (moveTimer) {
+            moveTimer->stop();
+            moveTimer = nullptr;
+            delete moveTimer;
+        }
+        if (enemyPixmapItem) {
+            enemyPixmapItem = nullptr;
+            delete enemyPixmapItem;
+        }
 }
 
-bool Enemy::is_dead(){
-    return dead;
-}
-int Enemy::get_pv(){
-    return PV;
-}
-int Enemy::get_damage(){
-    return damage;
-}
-void Enemy::set_dead(bool dead){
-    this->dead = dead;
-}
-void Enemy::set_damage(int damage){
-    if(damage>0){
-        this->damage = damage;
-    }
-    else{
-        std::cout<<"Les dégats doivent être supérieurs à 0";
-    }
-}
-void Enemy::set_pv(int PV){
-    if(PV>0){
-        this->PV = PV;
-    }
-    else{
-        this->PV = 0;
-    }
-}
 
-void Enemy::inflict_damage(int damage) {
-    qDebug()<<"Enemy take damage";
-    if(get_pv()>0) {
-        set_pv(PV - damage);
+void Enemy::inflictDamage(int damage) {
+
+    setPv(PV-damage);
+
+    if(getPv()>0) {
+        return;
     }
     else{
-        if(get_pv()<=0){
-            dead = true;
-            qDebug() << "Enemy defeated!";
-            emit increase_score();
-            emit add_gold();
-
-            remove_enemy();
+        if(getPv()<=0){
+            setDead(true);
+            emit increaseScore();
+            emit addGold();
+            removeEnemy();
         }
     }
 }
+Enemy::~Enemy() {}

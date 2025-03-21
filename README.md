@@ -1,4 +1,14 @@
-# TowerDefense par Duplais Emile et Zboril-Berteaud Pierre
+# Continuité TowerDefense 
+
+------Lancement Annexe------
+
+Le jeu a besoin que Postgres soit lancé pour fonctionner pour cela, dans debian, commandes : 
+
+
+sudo service postgresql start
+
+----------------------------
+
 
 ------Compilation------
 

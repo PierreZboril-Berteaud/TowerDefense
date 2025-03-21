@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/PostgresExample.dir/PostgresExample_autogen/mocs_compilation.cpp.o CMakeFiles/PostgresExample.dir/main.cpp.o -o PostgresExample  -lpq -lpqxx 

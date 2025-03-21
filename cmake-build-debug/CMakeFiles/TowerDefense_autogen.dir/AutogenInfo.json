@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen",
-	"CMAKE_BINARY_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense",
+	"BUILD_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen",
+	"CMAKE_BINARY_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/CMakeLists.txt",
-		"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/3.25.1/CMakeSystem.cmake",
+		"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/CMakeLists.txt",
+		"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/3.25.1/CMakeSystem.cmake",
 		"/usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/3.25.1/CMakeCXXCompiler.cmake",
+		"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/3.25.1/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake",
@@ -177,53 +177,63 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
-		"/usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake"
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindPostgreSQL.cmake",
+		"/usr/share/cmake-3.25/Modules/FindPostgreSQL.cmake",
+		"/usr/share/cmake-3.25/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense",
+	"CMAKE_SOURCE_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MainWindow.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MainWindow.h",
+			"Mu",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MyScene.h",
+			"Mu",
 			"EWIEGA46WW/moc_MyScene.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/enemy.h",
+			"Mu",
 			"EWIEGA46WW/moc_enemy.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/health.h",
+			"Mu",
 			"EWIEGA46WW/moc_health.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/projectile.h",
+			"Mu",
+			"EWIEGA46WW/moc_projectile.cpp",
+			null
+		],
+		[
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/score.h",
+			"Mu",
 			"EWIEGA46WW/moc_score.cpp",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/tower.h",
+			"Mu",
 			"EWIEGA46WW/moc_tower.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/include",
-	"MOC_COMPILATION_FILE" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/include",
+	"MOC_COMPILATION_FILE" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -234,6 +244,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/usr/include/postgresql",
 		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
@@ -265,58 +276,59 @@
 		"-c",
 		"/usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/TowerDefense_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/TowerDefense_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/TowerDefense_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
-	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
+	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
-	"SETTINGS_FILE" : "/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/TowerDefense_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles/TowerDefense_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MainWindow.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MainWindow.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MyScene.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/enemy.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/health.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/main.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/projectile.cpp",
+			"Mu",
 			null
 		],
 		[
-			"/mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.cpp",
-			"MU",
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/score.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/tower.cpp",
+			"Mu",
 			null
 		]
 	],
-	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
-	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
 }

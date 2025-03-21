@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /TowerDefense
+CMAKE_SOURCE_DIR = /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /TowerDefense/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /TowerDefense/cmake-build-debug/CMakeFiles /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /TowerDefense/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -286,6 +286,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+projectile.o: projectile.cpp.o
+.PHONY : projectile.o
+
+# target to build an object file
+projectile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/projectile.cpp.o
+.PHONY : projectile.cpp.o
+
+projectile.i: projectile.cpp.i
+.PHONY : projectile.i
+
+# target to preprocess a source file
+projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/projectile.cpp.i
+.PHONY : projectile.cpp.i
+
+projectile.s: projectile.cpp.s
+.PHONY : projectile.s
+
+# target to generate assembly for a file
+projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefense.dir/build.make CMakeFiles/TowerDefense.dir/projectile.cpp.s
+.PHONY : projectile.cpp.s
+
 score.o: score.cpp.o
 .PHONY : score.o
 
@@ -362,6 +386,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... projectile.o"
+	@echo "... projectile.i"
+	@echo "... projectile.s"
 	@echo "... score.o"
 	@echo "... score.i"
 	@echo "... score.s"

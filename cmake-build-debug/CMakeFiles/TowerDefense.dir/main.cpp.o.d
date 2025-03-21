@@ -1,5 +1,5 @@
 CMakeFiles/TowerDefense.dir/main.cpp.o: \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/main.cpp \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/main.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
@@ -368,7 +368,47 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MainWindow.h \
+ /usr/include/pqxx/pqxx /usr/include/pqxx/array \
+ /usr/include/pqxx/array.hxx /usr/include/pqxx/compiler-public.hxx \
+ /usr/include/pqxx/config-public-compiler.h /usr/include/c++/12/ciso646 \
+ /usr/include/pqxx/compiler-internal-pre.hxx \
+ /usr/include/pqxx/internal/encoding_group.hxx \
+ /usr/include/pqxx/internal/encodings.hxx \
+ /usr/include/pqxx/compiler-internal-post.hxx \
+ /usr/include/pqxx/binarystring /usr/include/pqxx/binarystring.hxx \
+ /usr/include/pqxx/result.hxx /usr/include/pqxx/except.hxx \
+ /usr/include/pqxx/util.hxx /usr/include/pqxx/strconv.hxx \
+ /usr/include/pqxx/internal/libpq-forward.hxx /usr/include/pqxx/types.hxx \
+ /usr/include/pqxx/connection /usr/include/pqxx/connection.hxx \
+ /usr/include/pqxx/connectionpolicy.hxx \
+ /usr/include/pqxx/basic_connection.hxx \
+ /usr/include/pqxx/connection_base.hxx /usr/include/c++/12/bitset \
+ /usr/include/pqxx/errorhandler.hxx \
+ /usr/include/pqxx/prepared_statement.hxx \
+ /usr/include/pqxx/internal/statement_parameters.hxx \
+ /usr/include/pqxx/strconv /usr/include/pqxx/util \
+ /usr/include/pqxx/internal/type_utils.hxx /usr/include/pqxx/version.hxx \
+ /usr/include/pqxx/internal/ignore-deprecated-pre.hxx \
+ /usr/include/pqxx/internal/ignore-deprecated-post.hxx \
+ /usr/include/pqxx/cursor /usr/include/pqxx/cursor.hxx \
+ /usr/include/pqxx/transaction_base.hxx /usr/include/pqxx/isolation.hxx \
+ /usr/include/pqxx/row.hxx /usr/include/pqxx/field.hxx \
+ /usr/include/pqxx/internal/sql_cursor.hxx /usr/include/pqxx/errorhandler \
+ /usr/include/pqxx/except /usr/include/pqxx/largeobject \
+ /usr/include/pqxx/largeobject.hxx /usr/include/pqxx/dbtransaction.hxx \
+ /usr/include/pqxx/nontransaction /usr/include/pqxx/nontransaction.hxx \
+ /usr/include/pqxx/notification /usr/include/pqxx/notification.hxx \
+ /usr/include/pqxx/pipeline /usr/include/pqxx/pipeline.hxx \
+ /usr/include/pqxx/prepared_statement /usr/include/pqxx/result \
+ /usr/include/pqxx/result_iterator.hxx \
+ /usr/include/pqxx/robusttransaction \
+ /usr/include/pqxx/robusttransaction.hxx /usr/include/pqxx/stream_from \
+ /usr/include/pqxx/stream_from.hxx /usr/include/pqxx/stream_base.hxx \
+ /usr/include/pqxx/stream_to /usr/include/pqxx/stream_to.hxx \
+ /usr/include/pqxx/subtransaction /usr/include/pqxx/subtransaction.hxx \
+ /usr/include/pqxx/transaction /usr/include/pqxx/transaction.hxx \
+ /usr/include/pqxx/transactor /usr/include/pqxx/transactor.hxx \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
@@ -419,11 +459,6 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidgetItem \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/MyScene.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
@@ -431,6 +466,20 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/MyScene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
@@ -440,7 +489,6 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
@@ -465,7 +513,17 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsSceneMouseEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicssceneevent.h \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/tower.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/tower.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/projectile.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/enemy.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/c++/12/iostream \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QVector2D \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
@@ -486,15 +544,10 @@ CMakeFiles/TowerDefense.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QCoreApplication \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/enemy.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /usr/include/c++/12/iostream \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/health.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/health.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/score.h

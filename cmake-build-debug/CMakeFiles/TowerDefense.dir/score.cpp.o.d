@@ -1,7 +1,7 @@
 CMakeFiles/TowerDefense.dir/score.cpp.o: \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.cpp \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/score.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/pierr/OneDrive/Bureau/Cours/A2/Informatique/c++/TowerDefense/score.h \
+ /mnt/c/users/pierr/onedrive/bureau/cours/A2/Informatique/c++/TowerDefense/score.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsTextItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

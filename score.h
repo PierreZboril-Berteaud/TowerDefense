@@ -9,7 +9,7 @@ class Score :public QGraphicsTextItem{
 public :
     Score(QGraphicsItem* parent=nullptr);
     ~Score();
-    void increase_score();
+    void increaseScore();
 
     int getScore() {return score;};
 
@@ -23,12 +23,12 @@ class Gold :public QGraphicsTextItem{
 public:
     Gold(QGraphicsItem* parent=nullptr);
     ~Gold();
-    void increase_gold();
+    void increaseGold();
 
-    void decrease_gold(int cost);
-    void increase_gold(int add_gold);
-    int get_gold(){return gold;};
-    void set_gold(int gold) {this->gold = gold;};
+    void decreaseGold(int cost);
+    void increaseGold(int addGold);
+    int getGold(){return gold;};
+    void setGold(int gold) {this->gold = gold;};
 private:
     int gold;
 };

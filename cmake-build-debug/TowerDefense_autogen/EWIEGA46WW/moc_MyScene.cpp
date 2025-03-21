@@ -26,15 +26,16 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MyScene_t {
-    uint offsetsAndSizes[16];
+    uint offsetsAndSizes[18];
     char stringdata0[8];
     char stringdata1[9];
     char stringdata2[1];
     char stringdata3[11];
     char stringdata4[11];
-    char stringdata5[14];
-    char stringdata6[15];
-    char stringdata7[10];
+    char stringdata5[7];
+    char stringdata6[14];
+    char stringdata7[14];
+    char stringdata8[10];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MyScene_t::offsetsAndSizes) + ofs), len 
@@ -45,18 +46,20 @@ Q_CONSTINIT static const qt_meta_stringdata_MyScene_t qt_meta_stringdata_MyScene
         QT_MOC_LITERAL(17, 0),  // ""
         QT_MOC_LITERAL(18, 10),  // "spawnEnemy"
         QT_MOC_LITERAL(29, 10),  // "reachedEnd"
-        QT_MOC_LITERAL(40, 13),  // "startNextWave"
-        QT_MOC_LITERAL(54, 14),  // "increase_score"
-        QT_MOC_LITERAL(69, 9)   // "game_over"
+        QT_MOC_LITERAL(40, 6),  // "damage"
+        QT_MOC_LITERAL(47, 13),  // "startNextWave"
+        QT_MOC_LITERAL(61, 13),  // "increaseScore"
+        QT_MOC_LITERAL(75, 9)   // "gameOverF"
     },
     "MyScene",
     "gameOver",
     "",
     "spawnEnemy",
     "reachedEnd",
+    "damage",
     "startNextWave",
-    "increase_score",
-    "game_over"
+    "increaseScore",
+    "gameOverF"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -79,17 +82,17 @@ Q_CONSTINIT static const uint qt_meta_data_MyScene[] = {
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
        3,    0,   51,    2, 0x08,    2 /* Private */,
-       4,    0,   52,    2, 0x08,    3 /* Private */,
-       5,    0,   53,    2, 0x08,    4 /* Private */,
-       6,    0,   54,    2, 0x08,    5 /* Private */,
-       7,    0,   55,    2, 0x0a,    6 /* Public */,
+       4,    1,   52,    2, 0x08,    3 /* Private */,
+       6,    0,   55,    2, 0x08,    5 /* Private */,
+       7,    0,   56,    2, 0x08,    6 /* Private */,
+       8,    0,   57,    2, 0x0a,    7 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    5,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -112,11 +115,12 @@ Q_CONSTINIT const QMetaObject MyScene::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'reachedEnd'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'startNextWave'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'increase_score'
+        // method 'increaseScore'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'game_over'
+        // method 'gameOverF'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -130,10 +134,10 @@ void MyScene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         switch (_id) {
         case 0: _t->gameOver(); break;
         case 1: _t->spawnEnemy(); break;
-        case 2: _t->reachedEnd(); break;
+        case 2: _t->reachedEnd((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 3: _t->startNextWave(); break;
-        case 4: _t->increase_score(); break;
-        case 5: _t->game_over(); break;
+        case 4: _t->increaseScore(); break;
+        case 5: _t->gameOverF(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -146,7 +150,6 @@ void MyScene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
             }
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MyScene::metaObject() const

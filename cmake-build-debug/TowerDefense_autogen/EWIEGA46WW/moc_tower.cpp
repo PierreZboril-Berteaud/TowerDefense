@@ -28,7 +28,7 @@ namespace {
 struct qt_meta_stringdata_Tower_t {
     uint offsetsAndSizes[6];
     char stringdata0[6];
-    char stringdata1[11];
+    char stringdata1[10];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
@@ -36,11 +36,11 @@ struct qt_meta_stringdata_Tower_t {
 Q_CONSTINIT static const qt_meta_stringdata_Tower_t qt_meta_stringdata_Tower = {
     {
         QT_MOC_LITERAL(0, 5),  // "Tower"
-        QT_MOC_LITERAL(6, 10),  // "tower_fire"
-        QT_MOC_LITERAL(17, 0)   // ""
+        QT_MOC_LITERAL(6, 9),  // "towerFire"
+        QT_MOC_LITERAL(16, 0)   // ""
     },
     "Tower",
-    "tower_fire",
+    "towerFire",
     ""
 };
 #undef QT_MOC_LITERAL
@@ -77,7 +77,7 @@ Q_CONSTINIT const QMetaObject Tower::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_Tower_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Tower, std::true_type>,
-        // method 'tower_fire'
+        // method 'towerFire'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -89,7 +89,7 @@ void Tower::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         auto *_t = static_cast<Tower *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->tower_fire(); break;
+        case 0: _t->towerFire(); break;
         default: ;
         }
     }

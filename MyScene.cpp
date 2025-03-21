@@ -1,17 +1,11 @@
 #include "MyScene.h"
-#include <QGraphicsScene>
-#include <QApplication>
-#include <QPixmap>
-#include <QScrollBar>
 
 MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
-    qDebug() << "Constructeur appelé";
     setSceneRect(0,0,1820,980);
     mapPixmap = new QPixmap("images/map_finale_texture.png");
     QGraphicsPixmapItem* pixmapItem = addPixmap(*mapPixmap);
 
     pixmapItem->setPos(0, 0);
-
 
 
     score = new Score();
@@ -23,7 +17,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     gold = new Gold();
     addItem(gold);
 
-    wave_count =1;
+    waveCount =1;
     nbEnemy = 5;
     enemiesSpawned =0;
 
@@ -31,7 +25,7 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
     connect(timer, SIGNAL(timeout()), this, SLOT(spawnEnemy()));
     timer->start(1000);
 
-    connect(health, &Health::gameOver, this, &MyScene::game_over);
+    connect(health, &Health::gameOver, this, &MyScene::gameOverF);
 
 }
 
@@ -39,35 +33,53 @@ MyScene::MyScene(QObject* parent) :QGraphicsScene(parent) {
 void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event) {
     if (event->button() == Qt::RightButton) {
         QPointF towerPos = event->scenePos();
-        towerPos.setX(towerPos.x() - 10);//Centre l'image par rapport au curseur de la souris
+        towerPos.setX(towerPos.x() - 10); // Centre l'image par rapport au curseur de la souris
         towerPos.setY(towerPos.y() - 60);
-        //Fais spawn une tour
-        Tower *tower = new Tower();
-        if (gold->get_gold() >= tower->get_cost()) {
-            tower->setPos(towerPos);
-            if (tower->is_valid_place()) {
-                addItem(tower);
-                gold->decrease_gold(tower->get_cost());
 
-                qDebug()<<"Il vous reste:"<<gold->get_gold()<<"Gold";
+
+        QMenu menu;
+
+        // Ajouter des actions pour chaque type de tour
+        QAction *towerType1 = new QAction("Tour Type 1 (Coût: 25)", &menu);
+
+        menu.addAction(towerType1);
+
+        QAction *selectedAction = menu.exec(event->screenPos());
+
+        int towerCost = 0;
+        int towerType = 0;
+
+        if (selectedAction == towerType1) {
+            towerCost = 25;
+            towerType = 1;
+        }
+
+        if (towerCost > 0 && gold->getGold() >= towerCost) {
+            Tower *tower = new Tower(towerPos.x(), towerPos.y(), towerType);
+            tower->setPos(towerPos);
+            if (tower->isValidPlace()) {
+                addItem(tower);
+                towerList.push_back(tower);
+                gold->decreaseGold(towerCost);
+            } else {
+                delete tower;
             }
-        } else {
-            qDebug() << "Pas assez d'argent";
         }
     }
 }
 void MyScene::spawnEnemy() {
     if (enemiesSpawned < nbEnemy) {
         // Crée un nouvel objet Enemy
-        Enemy* enemy = new Enemy();
-        enemy->setPos(0, 460);
+        Enemy* enemy = new Enemy(2);
+
+        enemyList.push_back(enemy);
         addItem(enemy);
         connect(enemy, &Enemy::reachedEnd, this, &MyScene::reachedEnd);
-        connect(enemy, &Enemy::increase_score, score, &Score::increase_score);
-        connect(enemy, &Enemy::add_gold, this, &MyScene::add_gold);
+        connect(enemy, &Enemy::increaseScore, score, &Score::increaseScore);
+        connect(enemy, &Enemy::addGold, this, &MyScene::addGold);
         enemiesSpawned++;
-        qDebug()<<enemy->pos();
-    } else {
+
+} else {
         timer->stop();
         waveTimer = new QTimer(this);
         waveTimer->setSingleShot(true); //le timer ne s'execute qu'une fois
@@ -77,7 +89,7 @@ void MyScene::spawnEnemy() {
 }
 
 void MyScene::startNextWave() {
-    wave_count++;
+    waveCount++;
     nbEnemy *= 2;
     enemiesSpawned = 0;
     timer->start(1500);
@@ -85,19 +97,19 @@ void MyScene::startNextWave() {
 int MyScene::getCurrentScore() const {
     return score->getScore();
 }
-void MyScene::reachedEnd() {
+void MyScene::reachedEnd(int damage) {
     if (health) { // Vérifie si health est un pointeur valide
-        health->decrease_pv(); // Diminue la santé de 10
+        health->decreasePv(10); // Diminue la santé de 10
     }
 }
-void MyScene::increase_score(){
+void MyScene::increaseScore(){
     if(score){
-        score->increase_score();
+        score->increaseScore();
     }
 }
-void MyScene::add_gold(){
+void MyScene::addGold(){
     if(gold){
-        gold->increase_gold(gold_added);
+        gold->increaseGold(goldAdded);
     }
 }
 
@@ -114,7 +126,6 @@ void MyScene::keyPressEvent(QKeyEvent* event) {
     }
 }
 
-
 void MyScene::zoomIn() {
     scale_factor *= 1.1;
     views().first()->scale(1.1, 1.1);
@@ -124,40 +135,66 @@ void MyScene::zoomOut() {
     scale_factor /= 1.1;
     views().first()->scale(1 / 1.1, 1 / 1.1);
 }
-void MyScene::game_over(){
+void MyScene::gameOverF(){
     qDebug() << "Game Over";
 
     if (timer) {
         timer->stop();
-        delete timer;
+
         timer = nullptr;
-        qDebug()<<"test time: ok!";
+        delete timer;
+        qDebug()<<"delete timer: ok!";
     }
 
     if (waveTimer) {
         waveTimer->stop();
-        delete waveTimer;
+
         waveTimer = nullptr;
-        qDebug()<<"test wavetimer: ok!";
+        delete waveTimer;
+        qDebug()<<"delete waveTimer : ok!";
     }
     if(gold){
         removeItem(gold);
-        delete gold;
+
         gold = nullptr;
+        delete gold;
+        qDebug() << "Delete gold : ok!";
     }
-
-
-
     if (mapPixmap) {
-        delete mapPixmap;
-        mapPixmap = nullptr;
-        qDebug()<<"Test pixmap : ok!";
-    }
 
-    qDebug()<<"test clear: ok!";
+        mapPixmap = nullptr;
+        delete mapPixmap;
+        qDebug()<<"delete pixmap : ok!";
+    }
+    deleteTowers();
+    deleteEnemy();
+
+    qDebug()<<" Tout les deletes: ok!";
 
 
     emit gameOver();
+}
+
+void MyScene::deleteTowers(){
+    if(towerList.size()!=0) {
+        for (size_t i = 0; i < towerList.size(); i++) {
+            towerList[i]->deleteTower();
+            towerList[i] = nullptr;
+            delete towerList[i];
+        }
+    }
+}
+
+void MyScene::deleteEnemy(){
+    if(enemyList.size() != 0){
+        for(size_t i=0; i<enemyList.size(); i++){
+            if(enemyList[i]) {
+                enemyList[i]->deleteEnemys();
+                enemyList[i] = nullptr;
+                delete enemyList[i];
+            }
+        }
+    }
 }
 
 MyScene::~MyScene(){}

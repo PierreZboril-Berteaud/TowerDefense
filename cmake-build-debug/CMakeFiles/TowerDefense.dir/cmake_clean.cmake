@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TowerDefense.dir/health.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/main.cpp.o"
   "CMakeFiles/TowerDefense.dir/main.cpp.o.d"
+  "CMakeFiles/TowerDefense.dir/projectile.cpp.o"
+  "CMakeFiles/TowerDefense.dir/projectile.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/score.cpp.o"
   "CMakeFiles/TowerDefense.dir/score.cpp.o.d"
   "CMakeFiles/TowerDefense.dir/tower.cpp.o"
